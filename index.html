@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Luxury Cosmetics">
+    <meta name="keywords" content="cosmetics, white, cream">
+    <meta name="author" content="Khiem G Luong">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    
+    <title>I-COMIT</title>
+  
+  </head>
+
+  <div class="overlay-navigation">
+    <nav role="navigation">
+      <ul>
+        <li><a href="#" data-content="The beginning">Home</a></li>
+        <li><a href="#" data-content="Curious?">About</a></li>
+        <li><a href="#" data-content="I got game">Skills</a></li>
+        <li><a href="#" data-content="Only the finest">Works</a></li>
+        <li><a href="#" data-content="Don't hesitate">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <img id="myDIV" src="icomitanimjpgs/icomit0.jpg"></img>
+    <!-- <div id="demo" class='centered'>
+      <p>This webpage uses the addEventListener() method to attach a "wheel" event to a DIV element. Roll the mouse wheel over the image - either up or down, and see the magic (that takes up much less bandwith than an actual 3D rendering engine running within the webpage!).</p>
+      <p>I have also added touch screen capabilities so swiping up and down on mobile will also cycle through the images for the animation.</p>
+      <p>I am aiming for a very clean and sleek look, where the images takes up the entire webpage, with any distracting text or icons (including this body of text), except for hamburger icon on the top right which creates a very nice dropdown animation.</p>
+      <p>This is not something you can achieve with any website builder, I coded the javascript logic from scratch.</p>
+      <p>With more time to model beautiful 3D scene (or buying one off cgtrader), such as of a luxury department store or mansion, placing the cosmetic products as 3D objects within the building, then having the user scroll to "enter the building", would create a very immersive web experience.</p>
+      <p>Most modern product showcases these days are made with 3D modeling software, often using more advance software such as Maya3D, Substance Painter, and Houdini SFX (I'm an artist too, just not with a canvas and paint).</p>
+      <p>This would require a lot of images which I can render out thanks to the powerful rig Dr. Heinrich provided me. I am also not asking for any extra money for finishing this project as I have already received the $1,400 advance with the objective of deploying this webpage on AWS by July 30 lastest to fulfill the grant.</p>
+</div> -->
+
+</div>
+  <section class="home">
+
+    <div class="open-overlay">
+      <span class="bar-top"></span>
+      <span class="bar-middle"></span>
+      <span class="bar-bottom"></span>
+    </div>
+  </section>
+  
+
+
+<script>
+document.getElementById("myDIV").addEventListener("wheel", myFunction);
+var score = 1
+function myFunction() {
+  if(score < 2)
+    score = 2
+	if (event.deltaY < 0)
+	{
+    score++
+    imagenum = `icomitanimjpgs/icomit${score}.jpg`
+  	// $('body').css('backgroundImage', `url(${imagenum})`);
+    $('img').attr('src', imagenum)
+    document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
+	}
+	else if (event.deltaY > 0)
+	{
+    score--
+    imagenum = `icomitanimjpgs/icomit${score}.jpg`
+    // $('body').css('backgroundImage', `url(${imagenum})`);
+    $('img').attr('src', imagenum)
+    document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
+	}
+}
+</script>
+
+<script>
+let start = null;
+swipescore = 1
+window.addEventListener('touchstart', function(e) {
+    start = e.changedTouches[0];
+});
+window.addEventListener('touchmove', function(e) {
+  let end = e.changedTouches[0];
+  if(swipescore < 2)
+    swipescore = 2
+  
+  if(end.screenY - start.screenY > 0)
+  {
+    swipescore--
+    imagenum = `icomitanimjpgs/icomit${score}.jpg`
+    $('img').attr('src', imagenum)
+    document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
+  }
+  else if(end.screenY - start.screenY < 0)
+  {
+    swipescore++
+    imagenum = `icomitanimjpgs/icomit${score}.jpg`
+    $('img').attr('src', imagenum)
+    document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
+  }
+});                                         
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'></script>
+<script src="./navbar.js"></script>
+<script>
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+</script>
+
+</body>
+</html>

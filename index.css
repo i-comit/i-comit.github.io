@@ -1,0 +1,123 @@
+body {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+   }
+#myDIV {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate(-8px,-8px);
+}
+
+img{
+  z-index: -10;
+}
+
+@media only screen and (max-width: 1080px) {
+    #myDIV{
+        width: 150%;
+        transform: translateX(-235px);
+        height: 100%;
+        z-index: -1;
+    }
+  }
+@media only screen and (max-width: 768px) {
+#myDIV{
+    width: 180%;
+    transform: translateX(-305px);
+    height: 100%;
+    z-index: -1;
+}
+}
+
+@media only screen and (max-width: 720px) {
+    #myDIV{
+        width: 200%;
+        transform: translateX(-335px);
+        height: 100%;
+        z-index: -1;
+    }
+  }
+@media only screen and (max-width: 640px) {
+#myDIV{
+    width: 250%;
+    transform: translateX(-480px);
+    height: 100%;
+    z-index: -1;
+}
+}
+@media only screen and (max-width: 600px) {
+    #myDIV{
+        width: 250%;
+        transform: translateX(-455px);
+        height: 100%;
+        z-index: -1;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    #myDIV{
+        width: 240%;
+        transform: translateX(-400px);
+        height: 100%;
+        z-index: -1;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+#myDIV{
+    width: 275%;
+    transform: translateX(-395px);
+    height: 100%;
+    z-index: -1;
+}
+}
+@media only screen and (max-width: 420px) {
+    #myDIV{
+        width: 300%;
+        transform: translateX(-415px);
+        height: 100%;
+        z-index: -1;
+    }
+    }
+@media only screen and (max-width: 360px) {
+#myDIV{
+    width: 300%;
+    transform: translateX(-360px);
+    height: 100%;
+    z-index: -1;
+}
+}
+@media only screen and (max-width: 320px) {
+    #myDIV{
+        width: 300%;
+        transform: translateX(-325px);
+        height: 100%;
+        z-index: -1;
+    }
+    }
+p{
+  background: -webkit-linear-gradient(#eee, #eeff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Agency', sans-serif;
+  font-size: small;
+  text-align: center;
+  font-weight: bolder;
+  width: 70%;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-50%, 50%);
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
