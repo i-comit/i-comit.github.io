@@ -9,10 +9,16 @@
     <meta name="author" content="Khiem G Luong">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
-    
+    <link rel="stylesheet" href="loadingbar.css">
+
     <title>I-COMIT</title>
-  
+
   </head>
+
+  <div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
 
   <div class="overlay-navigation">
     <nav role="navigation">
@@ -46,7 +52,7 @@
       <span class="bar-bottom"></span>
     </div>
   </section>
-  
+
 
 
 <script>
@@ -84,7 +90,7 @@ window.addEventListener('touchmove', function(e) {
   let end = e.changedTouches[0];
   if(swipescore < 2)
     swipescore = 2
-  
+
   if(end.screenY - start.screenY > 0)
   {
     swipescore--
@@ -99,7 +105,7 @@ window.addEventListener('touchmove', function(e) {
     $('img').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
-});                                         
+});
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -108,6 +114,12 @@ window.addEventListener('touchmove', function(e) {
 <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'></script>
 <script src="./navbar.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event){
+    alert("It's loaded!?")
+});
+</script>
+
 <script>
   function preloadIter(){
     let numCounter = 0;
@@ -126,6 +138,7 @@ window.addEventListener('touchmove', function(e) {
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
         $('<img/>')[0].src = this;
+
     });
 }
 
