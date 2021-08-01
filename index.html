@@ -109,36 +109,27 @@ window.addEventListener('touchmove', function(e) {
 <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'></script>
 <script src="./navbar.js"></script>
 <script>
+  function preloadIter(){
+    let numCounter = 0;
+    let numArray = [];
+    for(let i=0; i < 150; i++){
+
+        numArray.push(`https://i-comit.github.io/icomitanimjpgs/icomit${numCounter++}.jpg`)
+
+    };
+    return numArray
+}
+</script>
+
+
+<script>
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
         $('<img/>')[0].src = this;
     });
 }
 
-preload([
-    "https://i-comit.github.io/icomitanimjpgs/icomit0.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit1.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit2.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit3.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit4.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit5.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit6.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit7.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit8.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit9.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit10.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit11.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit12.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit13.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit14.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit15.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit16.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit17.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit18.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit19.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit20.jpg",
-    
-    ]);
+preload(preloadIter());
 
 </script>
 
