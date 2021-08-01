@@ -88,16 +88,16 @@ window.addEventListener('touchmove', function(e) {
   if(end.screenY - start.screenY > 0)
   {
     swipescore--
-    imagenum = `icomitanimjpgs/icomit${score}.jpg`
+    imagenum = `icomitanimjpgs/icomit${swipescore}.jpg`
     $('img').attr('src', imagenum)
-    document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
+    document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
   else if(end.screenY - start.screenY < 0)
   {
     swipescore++
-    imagenum = `icomitanimjpgs/icomit${score}.jpg`
+    imagenum = `icomitanimjpgs/icomit${swipescore}.jpg`
     $('img').attr('src', imagenum)
-    document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
+    document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
 });                                         
 </script>
@@ -126,7 +126,17 @@ preload([
     "https://i-comit.github.io/icomitanimjpgs/icomit7.jpg",
     "https://i-comit.github.io/icomitanimjpgs/icomit8.jpg",
     "https://i-comit.github.io/icomitanimjpgs/icomit9.jpg",
-    "https://i-comit.github.io/icomitanimjpgs/icomit10.jpg"
+    "https://i-comit.github.io/icomitanimjpgs/icomit10.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit11.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit12.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit13.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit14.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit15.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit16.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit17.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit18.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit19.jpg",
+    "https://i-comit.github.io/icomitanimjpgs/icomit20.jpg",
     
     ]);
 
