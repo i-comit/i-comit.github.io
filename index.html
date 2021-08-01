@@ -11,15 +11,12 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="loadingbar.css">
     
-    <title>I-COMIT</title>
+    <title>I-Comit</title>
   
   </head>
 
-  <div id="overlay">
-    <div id="progstat"></div>
-    <div id="progress"></div>
-  </div>
-
+  <div id="loading"></div>
+<div class="container">
   <div class="overlay-navigation">
     <nav role="navigation">
       <ul>
@@ -43,7 +40,7 @@
       <p>This would require a lot of images which I can render out thanks to the powerful rig Dr. Heinrich provided me. I am also not asking for any extra money for finishing this project as I have already received the $1,400 advance with the objective of deploying this webpage on AWS by July 30 lastest to fulfill the grant.</p>
 </div> -->
 
-</div>
+
   <section class="home">
 
     <div class="open-overlay">
@@ -52,14 +49,14 @@
       <span class="bar-bottom"></span>
     </div>
   </section>
-  
+</div>
 
 
 <script>
 document.getElementById("myDIV").addEventListener("wheel", myFunction);
 var score = 1
 function myFunction() {
-  if(score < 2)
+  if(score < 2 || score > 149)
     score = 2
 	if (event.deltaY < 0)
 	{
@@ -88,7 +85,7 @@ window.addEventListener('touchstart', function(e) {
 });
 window.addEventListener('touchmove', function(e) {
   let end = e.changedTouches[0];
-  if(swipescore < 2)
+  if(swipescore < 2 || swipescore > 149)
     swipescore = 2
   
   if(end.screenY - start.screenY > 0)
@@ -116,7 +113,8 @@ window.addEventListener('touchmove', function(e) {
 <script src="./navbar.js"></script>
 <script>
   window.addEventListener('load', function () {
-    alert("It's loaded!!")
+    var el = document.getElementById('loading');
+    el.remove()
 })
 //   document.addEventListener("DOMContentLoaded", function(event){
 //     alert("It's loaded!")
