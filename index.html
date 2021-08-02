@@ -9,36 +9,56 @@
     <meta name="author" content="Khiem G Luong">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="loadingbar.css">
-    
-    <title>I-Comit</title>
-  
+    <link rel="stylesheet" href="loading.css">
+    <link rel="stylesheet" href="protip.css">
+
+    <title>i-comit</title>
+
   </head>
 
   <div id="loading"></div>
+  <div id="protip">scroll or swipe up and down</div>
 <div class="container">
   <div class="overlay-navigation">
     <nav role="navigation">
       <ul>
-        <li><a href="#" data-content="The beginning">Home</a></li>
-        <li><a href="#" data-content="Curious?">About</a></li>
-        <li><a href="#" data-content="I got game">Skills</a></li>
-        <li><a href="#" data-content="Only the finest">Works</a></li>
+        <li><a href="#" data-content="The beginning">web development</a></li>
+        <li><a href="#" data-content="Curious?">part design</a></li>
+        <li><a href="#" data-content="I got game">3D modeling</a></li>
+        <li><a href="https://smarttarded.github.io/" target="_blank" data-content="Only the finest">my personal page</a></li>
         <li><a href="#" data-content="Don't hesitate">Contact</a></li>
       </ul>
     </nav>
   </div>
 
   <img id="myDIV" src="icomitanimset/icomit0.jpg"></img>
-    <!-- <div id="demo" class='centered'>
-      <p>This webpage uses the addEventListener() method to attach a "wheel" event to a DIV element. Roll the mouse wheel over the image - either up or down, and see the magic (that takes up much less bandwith than an actual 3D rendering engine running within the webpage!).</p>
+    <div id="demo" class='centered'>
+      <!-- <p>This webpage uses the addEventListener() method to attach a "wheel" event to a DIV element. Roll the mouse wheel over the image - either up or down, and see the magic (that takes up much less bandwith than an actual 3D rendering engine running within the webpage!).</p>
       <p>I have also added touch screen capabilities so swiping up and down on mobile will also cycle through the images for the animation.</p>
       <p>I am aiming for a very clean and sleek look, where the images takes up the entire webpage, with any distracting text or icons (including this body of text), except for hamburger icon on the top right which creates a very nice dropdown animation.</p>
       <p>This is not something you can achieve with any website builder, I coded the javascript logic from scratch.</p>
       <p>With more time to model beautiful 3D scene (or buying one off cgtrader), such as of a luxury department store or mansion, placing the cosmetic products as 3D objects within the building, then having the user scroll to "enter the building", would create a very immersive web experience.</p>
       <p>Most modern product showcases these days are made with 3D modeling software, often using more advance software such as Maya3D, Substance Painter, and Houdini SFX (I'm an artist too, just not with a canvas and paint).</p>
-      <p>This would require a lot of images which I can render out thanks to the powerful rig Dr. Heinrich provided me. I am also not asking for any extra money for finishing this project as I have already received the $1,400 advance with the objective of deploying this webpage on AWS by July 30 lastest to fulfill the grant.</p>
-</div> -->
+      <p>This would require a lot of images which I can render out thanks to the powerful rig Dr. Heinrich provided me. I am also not asking for any extra money for finishing this project as I have already received the $1,400 advance with the objective of deploying this webpage on AWS by July 30 lastest to fulfill the grant.</p> -->
+        <iframe
+        id="video"
+        width="450"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/ZEq3Kvvq9io?rel=0&amp;controls=0&amp;showinfo=0"
+        frameborder="1"
+        allowfullscreen
+        name="datadeni"
+      ></iframe>
+      <iframe
+      id="video"
+      width="450"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/BM8OYEephqY?rel=0&amp;controls=0&amp;showinfo=0"
+      frameborder="1"
+      allowfullscreen
+      name="datadeni"
+    ></iframe>
+</div>
 
 
   <section class="home">
@@ -50,19 +70,25 @@
     </div>
   </section>
 </div>
-
+<script>
+  document.getElementById("protip").addEventListener("wheel", startWeb);
+  document.getElementById("protip").addEventListener("touchstart", startWeb);
+function startWeb(){
+    document.getElementById("protip").style.display = "none";
+} 
+</script>
 
 <script>
-document.getElementById("myDIV").addEventListener("wheel", myFunction);
+document.getElementById("myDIV").addEventListener("wheel", scrollWheel);
 var score = 1
-function myFunction() {
+function scrollWheel() {
+
   if(score < 2 || score > 148)
     score = 2
 	if (event.deltaY < 0)
 	{
     score--
     imagenum = `icomitanimset/icomit${score}.jpg`
-  	// $('body').css('backgroundImage', `url(${imagenum})`);
     $('img').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
 	}
@@ -80,14 +106,14 @@ function myFunction() {
 <script>
 let start = null;
 swipescore = 1
-window.addEventListener('touchstart', function(e) {
+document.getElementById("myDIV").addEventListener('touchstart', function(e) {
     start = e.changedTouches[0];
 });
-window.addEventListener('touchmove', function(e) {
+document.getElementById("myDIV").addEventListener('touchmove', function(e) {
   let end = e.changedTouches[0];
   if(swipescore < 2 || swipescore > 148)
     swipescore = 2
-  
+
   if(end.screenY - start.screenY > 0)
   {
     swipescore--
@@ -102,7 +128,7 @@ window.addEventListener('touchmove', function(e) {
     $('img').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
-});                                         
+});
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -115,6 +141,17 @@ window.addEventListener('touchmove', function(e) {
   window.addEventListener('load', function () {
     var el = document.getElementById('loading');
     el.remove()
+    document.getElementById("protip").style.display = "block"
+
+    var refreshId = setInterval(function(){
+      if(score < 2 || score > 148)
+      score = 2
+      imagenum = `icomitanimset/icomit${score++}.jpg`
+      $('img').attr('src', imagenum)  
+      if(document.getElementById("protip").style.display == "none"){
+      clearInterval(refreshId)
+    }
+  },60);
 })
 //   document.addEventListener("DOMContentLoaded", function(event){
 //     alert("It's loaded!")
@@ -126,9 +163,7 @@ window.addEventListener('touchmove', function(e) {
     let numCounter = 0;
     let numArray = [];
     for(let i=0; i < 150; i++){
-
         numArray.push(`icomitanimset/icomit${numCounter++}.jpg`)
-
     };
     return numArray
 }
@@ -139,7 +174,6 @@ window.addEventListener('touchmove', function(e) {
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
         $('<img/>')[0].src = this;
-
     });
 }
 

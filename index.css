@@ -5,19 +5,6 @@ body {
     height: 100%;
    }
 
-#loading {
-  display: block;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background-color: rgba(192, 192, 192, 0.5);
-  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 #myDIV {
   width: 100%;
@@ -111,8 +98,17 @@ img{
         height: 100%;
         z-index: -1;
     }
-    }
-p{
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.container p{
   background: -webkit-linear-gradient(#eee, #eeff00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -123,16 +119,12 @@ p{
   width: 70%;
 }
 
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
 .centered {
   position: absolute;
   top: 80%;
-  left: 60%;
-  transform: translate(-50%, 50%);
+  left: 20%;
+  transform: translate(-50%, 80%);
   text-transform: uppercase;
   color: rgb(255, 255, 255);
+  width: 50%;
 }

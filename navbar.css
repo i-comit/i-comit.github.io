@@ -219,7 +219,7 @@ Animation keyframes
   }
   100% {
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #6e6e6e;
   }
 }
 
@@ -236,7 +236,7 @@ Animation keyframes
   }
   100% {
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #6e6e6e;
   }
 }
 
@@ -253,7 +253,7 @@ Animation keyframes
   }
   100% {
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #6e6e6e;
   }
 }
 
@@ -270,7 +270,7 @@ Animation keyframes
   }
   100% {
     transform: translateY(0);
-    background-color: #29363B;
+    background-color: #6e6e6e;
   }
 }
 
@@ -282,7 +282,7 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    background-color: #29363B;
+    background-color: #6e6e6e;
   }
 }
 
@@ -294,7 +294,7 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    background-color: #29363B;
+    background-color: #6e6e6e;
   }
 }
 
