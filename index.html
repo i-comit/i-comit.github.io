@@ -29,7 +29,7 @@
     </nav>
   </div>
 
-  <img id="myDIV" src="icomitanimset2/icomit0.jpg"></img>
+  <img id="myDIV" src="icomitanimset/icomit0.jpg"></img>
     <!-- <div id="demo" class='centered'>
       <p>This webpage uses the addEventListener() method to attach a "wheel" event to a DIV element. Roll the mouse wheel over the image - either up or down, and see the magic (that takes up much less bandwith than an actual 3D rendering engine running within the webpage!).</p>
       <p>I have also added touch screen capabilities so swiping up and down on mobile will also cycle through the images for the animation.</p>
@@ -60,16 +60,16 @@ function myFunction() {
     score = 2
 	if (event.deltaY < 0)
 	{
-    score++
-    imagenum = `icomitanimset2/icomit${score}.jpg`
+    score--
+    imagenum = `icomitanimset/icomit${score}.jpg`
   	// $('body').css('backgroundImage', `url(${imagenum})`);
     $('img').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
 	}
 	else if (event.deltaY > 0)
 	{
-    score--
-    imagenum = `icomitanimset2/icomit${score}.jpg`
+    score++
+    imagenum = `icomitanimset/icomit${score}.jpg`
     // $('body').css('backgroundImage', `url(${imagenum})`);
     $('img').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
@@ -91,14 +91,14 @@ window.addEventListener('touchmove', function(e) {
   if(end.screenY - start.screenY > 0)
   {
     swipescore--
-    imagenum = `icomitanimset2/icomit${swipescore}.jpg`
+    imagenum = `icomitanimset/icomit${swipescore}.jpg`
     $('img').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
   else if(end.screenY - start.screenY < 0)
   {
     swipescore++
-    imagenum = `icomitanimset2/icomit${swipescore}.jpg`
+    imagenum = `icomitanimset/icomit${swipescore}.jpg`
     $('img').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
@@ -125,9 +125,9 @@ window.addEventListener('touchmove', function(e) {
   function preloadIter(){
     let numCounter = 0;
     let numArray = [];
-    for(let i=0; i < 151; i++){
+    for(let i=0; i < 150; i++){
 
-        numArray.push(`https://i-comit.github.io/icomitanimset2/icomit${numCounter++}.jpg`)
+        numArray.push(`icomitanimset/icomit${numCounter++}.jpg`)
 
     };
     return numArray
