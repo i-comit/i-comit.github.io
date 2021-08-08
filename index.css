@@ -144,3 +144,7 @@ iframe#video {
   color: rgb(255, 255, 255);
   width: 50%;
 }
+
+#logo{
+  z-index: 1000;
+}

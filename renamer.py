@@ -3,6 +3,11 @@
 
 # importing os module
 import os
+
+
+print("This program replaces the name of all files in a folder and append the iterative value of it at the end. \n")
+print("Enter the path of the folder (not the actual file), then enter a name, the program will then change the \nfile name to the one you entered with the order number. \n")
+print("BY: Khiem G Luong \n")
 path = input("Enter the directory path: ")
 name = input("Enter the name for the files: ")
 # Function to rename multiple files

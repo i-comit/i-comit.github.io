@@ -55,7 +55,7 @@ nav ul li {
 
 nav li a {
   position: relative;
-  top: 46%;
+  top: 20%;
   color: #fff;
   text-transform: uppercase;
   font-family: 'Work sans', sans-serif;
@@ -64,8 +64,10 @@ nav li a {
   text-decoration: none;
   display: block;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   opacity: 0;
+  height: 50%;
+  padding-top: 15em;
 }
 
 nav li a:before {
@@ -103,46 +105,37 @@ nav li a:after {
   letter-spacing: 0;
 }
 
-nav li a:hover:before {
-  transform: translateX(0);
-  opacity: 1;
-}
-
-nav li a:hover:after {
-  transform: translateY(15px);
-  opacity: 1;
-}
 
 nav li:nth-of-type(1) {
-  background-color: #303030ea
+  background-color: #303030
 }
 nav li:nth-of-type(1):hover {
   background-color: #3131316e
 }
 
 nav li:nth-of-type(2) {
-  background-color: #ea495fe5
+  background-color: #ea495f
 }
 nav li:nth-of-type(2):hover {
   background-color: #ea495f56
 }
 
 nav li:nth-of-type(3) {
-  background-color: #f4837de8
+  background-color: #f4837d
 }
 nav li:nth-of-type(3):hover {
   background-color: #f4837d67
 }
 
 nav li:nth-of-type(4) {
-  background-color: #fdcda9ea
+  background-color: #fdcda9
 }
 nav li:nth-of-type(4):hover {
   background-color: #fdcda95d
 }
 
 nav li:nth-of-type(5) {
-  background-color: #99b998e5
+  background-color: #99b998
 }
 nav li:nth-of-type(5):hover {
   background-color: #99b99862
@@ -165,10 +158,11 @@ Burger king
 
 .open-overlay span {
   display: block;
-  height: 1px;
+  height: 4px;
   background-color: #fff;
   cursor: pointer;
   margin-top: 8px;
+  width: 50px;
 }
 
 .animate-top-bar {
@@ -219,41 +213,41 @@ Animation keyframes
   }
   100% {
     transform: translateY(0);
-    background-color: #6e6e6e;
+    background-color: #ffffff;
   }
 }
 
 @keyframes animate-top-bar {
   0% {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
   }
   50% {
     transform: translateY(9px)
   }
   80% {
     transform: translateY(5px);
-    background-color: #fff
+    background-color: rgb(255, 255, 255)
   }
   100% {
     transform: translateY(0);
-    background-color: #6e6e6e;
+    background-color: #ffffff;
   }
 }
 
 @-webkit-keyframes animate-bottom-bar {
   0% {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
   }
   50% {
     transform: translateY(-9px)
   }
   80% {
     transform: translateY(-5px);
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
   }
   100% {
     transform: translateY(0);
-    background-color: #6e6e6e;
+    background-color: #ffffff;
   }
 }
 
@@ -270,7 +264,7 @@ Animation keyframes
   }
   100% {
     transform: translateY(0);
-    background-color: #6e6e6e;
+    background-color: #ffffff;
   }
 }
 
@@ -282,7 +276,7 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    background-color: #6e6e6e;
+    background-color: #ffffff;
   }
 }
 
@@ -294,7 +288,7 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    background-color: #6e6e6e;
+    background-color: #ffffff;
   }
 }
 
