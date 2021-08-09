@@ -151,7 +151,7 @@ Burger king
 .open-overlay {
   position: absolute;
   right: 5rem;
-  top: 3.4rem;
+  top: 15px;
   z-index: 100;
   width: 34px;
   display: block;

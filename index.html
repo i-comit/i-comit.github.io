@@ -11,15 +11,18 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="loading.css">
     <link rel="stylesheet" href="protip.css">
+    <link rel="stylesheet" href="textscrambler.css">
 
     <title>i-comit</title>
 
   </head>
 
   <div id="loading"></div>
+
   <div id="protip">scroll or swipe up and down</div>
 <div class="container">
-<img id="logo" src="icomitlogo.png"></img>
+<img id="logo" src="icomitlogowhite.png"></img>
+<div class="text"></div>
   <div class="overlay-navigation">
     <nav role="navigation">
       <ul>
@@ -124,6 +127,7 @@ document.getElementById("myDIV").addEventListener('touchmove', function(e) {
 <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'></script>
 
 <script src="./navbar.js"></script>
+,<script src="./textscrambler.babel"></script>
 <script>
   window.addEventListener('load', function () {
     var el = document.getElementById('loading');
