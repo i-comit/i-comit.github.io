@@ -151,7 +151,7 @@ Burger king
 .open-overlay {
   position: absolute;
   right: 5rem;
-  top: 3.2rem;
+  top: 3.4rem;
   z-index: 100;
   width: 34px;
   display: block;
@@ -409,6 +409,7 @@ Animation keyframes
     height: 25%;
     top: 15%;
     position: relative;
+    left: 0px;
 }
   nav ul li a {
     font-size: 11px;
@@ -422,8 +423,10 @@ Animation keyframes
   }
   .open-overlay {
     right: 1rem;
+    top: 2.2rem;
   }
   nav li a:before {
     width: 25px;
   }
+  
 }

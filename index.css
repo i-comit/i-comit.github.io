@@ -28,7 +28,7 @@ img{
 @media only screen and (max-width: 1080px) {
     #myDIV{
         width: 150%;
-        transform: translateX(-235px);
+        transform: translate(-235px, -8px);
         height: 100%;
         z-index: -1;
     }
@@ -36,7 +36,7 @@ img{
 @media only screen and (max-width: 768px) {
 #myDIV{
     width: 180%;
-    transform: translateX(-305px);
+    transform: translate(-305px, -8px);
     height: 100%;
     z-index: -1;
 }
@@ -45,7 +45,7 @@ img{
 @media only screen and (max-width: 720px) {
     #myDIV{
         width: 200%;
-        transform: translateX(-335px);
+        transform: translate(-335px, -8px);
         height: 100%;
         z-index: -1;
     }
@@ -53,7 +53,7 @@ img{
 @media only screen and (max-width: 640px) {
 #myDIV{
     width: 250%;
-    transform: translateX(-480px);
+    transform: translate(-480px, -8px);
     height: 100%;
     z-index: -1;
 }
@@ -64,7 +64,7 @@ iframe#video {
 @media only screen and (max-width: 600px) {
     #myDIV{
         width: 250%;
-        transform: translateX(-455px);
+        transform: translate(-455px, -8px);
         height: 100%;
         z-index: -1;
     }
@@ -83,7 +83,7 @@ iframe#video {
   @media only screen and (max-width: 540px) {
     #myDIV{
         width: 240%;
-        transform: translateX(-400px);
+        transform: translate(-400px, -8px);
         height: 100%;
         z-index: -1;
     }
@@ -99,7 +99,7 @@ iframe#video {
 @media only screen and (max-width: 480px) {
 #myDIV{
     width: 275%;
-    transform: translateX(-395px);
+    transform: translate(-395px, -8px);
     height: 100%;
     z-index: -1;
     
@@ -113,7 +113,7 @@ iframe#video {
 @media only screen and (max-width: 420px) {
     #myDIV{
         width: 300%;
-        transform: translateX(-415px);
+        transform: translate(-415px, -8px);
         height: 100%;
         z-index: -1;
     }
