@@ -158,7 +158,7 @@ document.getElementById("myDIV").addEventListener('touchmove', function(e) {
 <script>
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
-        $('</img>')[0].src = this;
+      $('<img/>')[0].src = this;
     });
 }
 
