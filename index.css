@@ -17,6 +17,14 @@ img{
   z-index: -10;
 }
 
+
+#logo {
+  z-index: 10;
+  width: 29%;
+  position: absolute;
+  left: 36%;
+}
+
 @media only screen and (max-width: 1080px) {
     #myDIV{
         width: 150%;
@@ -60,6 +68,13 @@ iframe#video {
         height: 100%;
         z-index: -1;
     }
+    #logo {
+      z-index: 10;
+      width: 29%;
+      position: absolute;
+      left: 38%;
+      top: 3%;
+    }
     #video{
       transform: scale(0.5,0.5);
       transform: translateX(-125px);
@@ -72,6 +87,13 @@ iframe#video {
         height: 100%;
         z-index: -1;
     }
+    #logo {
+      z-index: 10;
+      width: 29%;
+      position: absolute;
+      left: 38%;
+      top: 4%;
+    }
   }
 
 @media only screen and (max-width: 480px) {
@@ -82,6 +104,7 @@ iframe#video {
     z-index: -1;
     
 }
+
 iframe#video {
   transform: scale(.7);
 }
@@ -94,6 +117,13 @@ iframe#video {
         height: 100%;
         z-index: -1;
     }
+    #logo {
+      z-index: 10;
+      width: 29%;
+      position: absolute;
+      left: 35%;
+      top: 5%;
+    }
     }
 @media only screen and (max-width: 360px) {
 #myDIV{
@@ -101,6 +131,13 @@ iframe#video {
     transform: translateX(-360px);
     height: 100%;
     z-index: -1;
+}
+#logo {
+  z-index: 10;
+  width: 29%;
+  position: absolute;
+  left: 35%;
+  top: 5%;
 }
 iframe#video {
   transform: scale(.5);
@@ -112,6 +149,13 @@ iframe#video {
 
         height: 100%;
         z-index: -1;
+    }
+    #logo {
+      z-index: 10;
+      width: 29%;
+      position: absolute;
+      left: 32%;
+      top: 5%;
     }
 
 }
@@ -143,11 +187,4 @@ iframe#video {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   width: 50%;
-}
-
-#logo {
-  z-index: 10;
-  width: 29%;
-  position: absolute;
-  left: 40%;
 }

@@ -67,7 +67,7 @@ nav li a {
   font-size: 1rem;
   opacity: 0;
   height: 50%;
-  padding-top: 15em;
+  padding-top: 5em;
 }
 
 nav li a:before {

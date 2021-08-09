@@ -67,18 +67,18 @@ document.getElementById("myDIV").addEventListener("wheel", scrollWheel);
 var score = 1
 function scrollWheel() {
 
-  if(score < 2 || score > 148)
+  if(score < 2 || score > 98)
     score = 2
 	if (event.deltaY < 0)
 	{
-    score--
+    score++
     imagenum = `icomitanimset/icomit${score}.jpg`
     $('#myDIV').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
 	}
 	else if (event.deltaY > 0)
 	{
-    score++
+    score--
     imagenum = `icomitanimset/icomit${score}.jpg`
     // $('body').css('backgroundImage', `url(${imagenum})`);
     $('#myDIV').attr('src', imagenum)
@@ -95,7 +95,7 @@ document.getElementById("myDIV").addEventListener('touchstart', function(e) {
 });
 document.getElementById("myDIV").addEventListener('touchmove', function(e) {
   let end = e.changedTouches[0];
-  if(swipescore < 2 || swipescore > 148)
+  if(swipescore < 2 || swipescore > 98)
     swipescore = 2
 
   if(end.screenY - start.screenY > 0)
@@ -129,7 +129,7 @@ document.getElementById("myDIV").addEventListener('touchmove', function(e) {
     document.getElementById("protip").style.display = "block"
 
     var refreshId = setInterval(function(){
-      if(score < 2 || score > 148)
+      if(score < 2 || score > 98)
       score = 2
       imagenum = `icomitanimset/icomit${score++}.jpg`
       $('#myDIV').attr('src', imagenum)
@@ -147,7 +147,7 @@ document.getElementById("myDIV").addEventListener('touchmove', function(e) {
   function preloadIter(){
     let numCounter = 0;
     let numArray = [];
-    for(let i=0; i < 150; i++){
+    for(let i=0; i < 100; i++){
         numArray.push(`icomitanimset/icomit${numCounter++}.jpg`)
     };
     return numArray
