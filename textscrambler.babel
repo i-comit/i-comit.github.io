@@ -63,8 +63,7 @@ class TextScramble {
   const phrases = [
     'a website programmed from scratch without a website builder.',
     'graduated with a PhD from the school of hard knocks.',
-    'do not care about your feelings.',
-    'I also code video games.',
+    'have you tried clicking the hamburger icon?',
     'Text changing too fast? Read faster, slowpoke.'
   ]
   
