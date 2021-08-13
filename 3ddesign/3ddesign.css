@@ -1,0 +1,50 @@
+.container{
+margin: 3em 5px 5em;
+position: absolute;
+width: 90%;
+height: 100%;
+top: 50%;
+left: 50%;
+vertical-align: baseline;
+text-align: center;
+transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1080px)
+{
+.text {
+    font-size: 36px;
+    bottom: 5%;
+}
+}
+
+@media (max-width: 720px)
+{
+    #video{
+        height: 700px;
+    }
+}
+
+@media (max-width: 640px) {
+    #video{
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    #video{
+        height: 400px;
+    }
+}
+
+@media (max-width: 360px) {
+    #video{
+        height: 280px;
+    }
+}
+
+@media (max-width: 320px) {
+  #video{
+      height: 240px;
+  }
+}

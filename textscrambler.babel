@@ -61,9 +61,10 @@ class TextScramble {
   // ——————————————————————————————————————————————————
   
   const phrases = [
-    'a website programmed from scratch without a website builder.',
+    'a page programmed from scratch without a website builder.',
     'graduated with a PhD from the school of hard knocks.',
     'have you tried clicking the hamburger icon?',
+    'this city scene was (mostly) done by me with blender.',
     'Text changing too fast? Read faster, slowpoke.'
   ]
   
@@ -73,7 +74,7 @@ class TextScramble {
   let counter = 0
   const next = () => {
     fx.setText(phrases[counter]).then(() => {
-      setTimeout(next, 2000)
+      setTimeout(next, 2500)
     })
     counter = (counter + 1) % phrases.length
   }

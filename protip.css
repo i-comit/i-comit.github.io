@@ -1,15 +1,17 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+
 #protip {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: block;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 98;
-    background-color: rgba(192, 192, 192, 0.178);
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    padding: 12em 0;
-    text-align: center;
-  }
+  font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  background-color: rgba(192, 192, 192, 0.178);
+  color: rgb(255, 255, 255);
+  font-size: 2vw;
+  padding: 20% 0 20%;
+  text-align: center;
+}
