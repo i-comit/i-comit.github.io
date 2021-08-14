@@ -20,18 +20,25 @@ img{
 
 #logo {
   z-index: 10;
-  width: 10vw;
-  top: 5px;
+  width: 165px;
+  top: 2px;
   position: absolute;
-  left: 45%;
+  left: 41%;
 }
 
-@media(max-width: 1080px) {
+@media(min-width: 1024px) {
     #myDIV{
         width: 150%;
         transform: translate(-235px, -8px);
         height: 100%;
         z-index: -1;
+    }
+    #logo {
+      z-index: 10;
+      width: 24%;
+      top: 1.5vw;
+      position: absolute;
+      left: 38.5%;
     }
   }
 @media(max-width: 768px) {
@@ -72,9 +79,7 @@ img{
   left: 40%;
   top: 3%;
 }
-iframe#video {
-  transform: scale(.9);
-}
+
 }
 @media(max-width: 600px) {
     #myDIV{
@@ -89,10 +94,6 @@ iframe#video {
       position: absolute;
       left: 38%;
       top: 3%;
-    }
-    #video{
-      transform: scale(0.5,0.5);
-      transform: translateX(-125px);
     }
   }
   @media(max-width: 540px) {
@@ -127,9 +128,6 @@ iframe#video {
 }  
 }
 
-iframe#video {
-  transform: scale(.7);
-}
 
 @media(max-width: 420px) {
     #myDIV{
@@ -155,13 +153,10 @@ iframe#video {
 }
 #logo {
   z-index: 10;
-  width: 29%;
+  width: 40%;
   position: absolute;
-  left: 35%;
-  top: 2%;
-}
-iframe#video {
-  transform: scale(.5);
+  left: 28%;
+  top: 1%;
 }
 }
 @media(max-width: 320px) {
@@ -173,10 +168,10 @@ iframe#video {
     }
     #logo {
       z-index: 10;
-      width: 29%;
+      width: 34%;
       position: absolute;
-      left: 32%;
-      top: 3%;
+      left: 30%;
+      top: 2%;
     }
 
 }

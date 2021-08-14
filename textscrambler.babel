@@ -16,8 +16,8 @@ class TextScramble {
       for (let i = 0; i < length; i++) {
         const from = oldText[i] || ''
         const to = newText[i] || ''
-        const start = Math.floor(Math.random() * 60)
-        const end = start + Math.floor(Math.random() * 60)
+        const start = Math.floor(Math.random() * 45)
+        const end = start + Math.floor(Math.random() * 45)
         this.queue.push({ from, to, start, end })
       }
       cancelAnimationFrame(this.frameRequest)
@@ -61,11 +61,10 @@ class TextScramble {
   // ——————————————————————————————————————————————————
   
   const phrases = [
-    'a page programmed from scratch without a website builder.',
-    'graduated with a PhD from the school of hard knocks.',
+    'a page programmed from scratch with coding.',
+    'the city scene modeled and shaded with blender.',
     'have you tried clicking the hamburger icon?',
-    'this city scene was (mostly) done by me with blender.',
-    'Text changing too fast? Read faster, slowpoke.'
+    'text changing too fast? Read faster, slowpoke.'
   ]
   
   const el = document.querySelector('.text')

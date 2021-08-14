@@ -1,0 +1,198 @@
+p {
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgb(206, 206, 206);
+  border-width: 4px 0;
+  padding: 1.1em 0em;
+  position: absolute;
+  top: 20%;
+  left: 3vw;
+  width: 30em;
+  margin: 0 0 0 0em;
+}
+
+p span {
+  font: 600 3em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 60s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/*# sourceMappingURL=animatedtext.css.map */
+
+/*Size compatibilities*/
+@media(min-width: 640px) {
+  p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border-width: 4px 0;
+    padding: 1.1em 0em;
+    position: absolute;
+    top: 5%;
+    left: 2vw;
+    width: 15em;
+    margin: 0 0 0 1em;
+  }
+  p span {
+    font: 550 1.5em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .25em;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+@media(max-width: 600px) {
+  p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.1em 0em;
+    position: absolute;
+    top: 5%;
+    left: 6vw;
+    width: 15em;
+    margin: 0 0 0 1em;
+  }
+  p span {
+    font: 500 1.5em/1 "Oswald", sans-serif;
+  }
+}
+
+@media(max-width: 540px) {
+  p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.1em 0em;
+    position: absolute;
+    top: 5%;
+    left: 13.5vw;
+    width: 15em;
+    margin: 0 0 0 1em;
+  }
+}
+
+@media(max-width: 480px) {
+  p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.1em 0em;
+    position: absolute;
+    top: 8%;
+    left: 8vw;
+    width: 17em;
+    margin: 0 0 0 2em;
+  }
+  p span {
+    font: 560 1.7em/1 "Oswald", sans-serif;
+  }
+}
+
+@media(max-width: 440px) {
+  p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border-width: 4px 0;
+    padding: 1.1em 0em;
+    position: absolute;
+    top: 5%;
+    left: 9%;
+    width: 16em;
+    margin: 0 0 0 2em;
+  }
+}
+
+@media(max-width: 400px) {
+  p {
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    display: inline-block;
+    border-width: 4px 0;
+    padding: 1.1em 0em;
+    position: absolute;
+    top: 6%;
+    left: 8%;
+    width: 16em;
+    margin: 0 0 0 2em;
+  }
+}
+
+
+
+@media(max-width: 360px) {
+  p {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    display: inline-block;
+    border-width: 4px 0;
+    padding: 1.1em 0em;
+    position: absolute;
+    top: 2%;
+    left: 8%;
+    margin: 0 0 0 2em;
+  }
+  p span {
+    font: 550 1.3em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/*iPhone SE*/
+@media(max-width: 320px) {
+  p {
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    display: inline-block;
+    border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0;
+    padding: 1.1em 0em;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    width: 14em;
+    margin: 0 0 0 2em;
+  }
+  p span {
+    font: 500 1.2em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+  }
+}
