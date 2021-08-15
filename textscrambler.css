@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Codystar&family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@400&display=swap');
 /* html,
 body {
   font-family: 'Roboto Mono', monospace;
@@ -14,13 +14,12 @@ body {
 } */
 .text {
   font-family: 'Codystar', 'Megrim', Courier, monospace;
-  font-weight: 500;
-  font-size: 1.2em;
+  font-size: 30px;
   color: #dadada;
   position: fixed;
   height: 5%;
   width: 100%;
-  bottom: 1.6em;
+  bottom: 3vh;
   text-align: center;
   left: 0%;
 }
@@ -28,3 +27,51 @@ body {
   color: #555555;
 }
 
+@media(max-width: 1024px){
+  .text {
+    font-family: 'Codystar', 'Megrim', Courier, monospace;
+    font-size: 52px;
+    bottom: 60px;
+}
+}
+
+@media(max-width: 840px){
+  .text {
+    font-family: 'Codystar', 'Megrim', Courier, monospace;
+    font-size: 26px;
+    bottom: 10px;
+}
+}
+
+@media(max-width: 540px){
+  .text {
+    font-family: 'Codystar', 'Megrim', Courier, monospace;
+    font-size: 28px;
+    bottom: 40px;
+}
+}
+
+@media(max-width: 420px){
+  .text {
+    font-family: 'Codystar', 'Megrim', Courier, monospace;
+    font-size: 24px;
+    bottom: 30px;
+}
+}
+
+@media(max-width: 360px){
+  .text {
+    font-family: 'Codystar', 'Megrim', Courier, monospace;
+    font-size: 22px;
+    bottom: 40px;
+}
+}
+
+
+@media(max-width: 320px){
+  .text {
+    font-family: 'Codystar', 'Megrim', Courier, monospace;
+    font-size: 20px;
+    bottom: 30px;
+}
+}

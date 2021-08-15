@@ -20,13 +20,13 @@ img{
 
 #logo {
   z-index: 10;
-  width: 165px;
-  top: 2px;
+  width: 10%;
+  top: 5px;
   position: absolute;
-  left: 41%;
+  left: 45%;
 }
 
-@media(min-width: 1024px) {
+@media(max-width: 1024px) {
     #myDIV{
         width: 150%;
         transform: translate(-235px, -8px);
@@ -35,10 +35,10 @@ img{
     }
     #logo {
       z-index: 10;
-      width: 24%;
-      top: 1.5vw;
+      width: 30%;
+      top: 5px;
       position: absolute;
-      left: 38.5%;
+      left: 36%;
     }
   }
 @media(max-width: 768px) {
@@ -105,10 +105,10 @@ img{
     }
     #logo {
       z-index: 10;
-      width: 29%;
+      width: 160px;
       position: absolute;
       left: 35%;
-      top: 5%;
+      top: 1px;
     }
   }
 
@@ -129,21 +129,54 @@ img{
 }
 
 
-@media(max-width: 420px) {
-    #myDIV{
-        width: 300%;
-        transform: translate(-415px, -8px);
-        height: 100%;
-        z-index: -1;
-    }
-    #logo {
-      z-index: 10;
-      width: 29%;
-      position: absolute;
-      left: 35%;
-      top: 2%;
-    }
-    }
+@media(max-width: 440px) {
+  #myDIV{
+      width: 300%;
+      transform: translate(-415px, -8px);
+      height: 100%;
+      z-index: -1;
+  }
+  #logo {
+    z-index: 10;
+    width: 140px;
+    position: absolute;
+    left: 130px;
+    top: 4px;
+  }
+}
+
+@media(max-width: 400px) {
+  #myDIV{
+      width: 300%;
+      transform: translate(-415px, -8px);
+      height: 100%;
+      z-index: -1;
+  }
+  #logo {
+    z-index: 10;
+    width: 135px;
+    position: absolute;
+    left: 120px;
+    top: 4px;
+  }
+}
+
+@media(max-width: 375px) {
+  #myDIV{
+      width: 300%;
+      transform: translate(-360px, -8px);
+      height: 100%;
+      z-index: -1;
+  }
+  #logo {
+    z-index: 10;
+    width: 125px;
+    position: absolute;
+    left: 32%;
+    top: 6px;
+  }
+}
+
 @media(max-width: 360px) {
 #myDIV{
     width: 300%;
@@ -168,10 +201,10 @@ img{
     }
     #logo {
       z-index: 10;
-      width: 34%;
+      width: 140px;
       position: absolute;
-      left: 30%;
-      top: 2%;
+      left: 25%;
+      top: 2px;
     }
 
 }

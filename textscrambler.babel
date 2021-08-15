@@ -63,7 +63,7 @@ class TextScramble {
   const phrases = [
     'a page programmed from scratch with coding.',
     'the city scene modeled and shaded with blender.',
-    'have you tried clicking the hamburger icon?',
+    'try clicking the hamburger icon.',
     'text changing too fast? Read faster, slowpoke.'
   ]
   
