@@ -22,14 +22,20 @@
 
   <div id="protip">scroll or swipe up and down</div>
 
-<img id="myDIV" src="icomitanimset/icomit0.jpg"></img>
+<img id="iCOMIT" src="icomitanimset/icomit0.jpg"></img>
 <img id="logo" src="icomitlogowhite.png"></img>
 <div class="container">
 
   <div class="overlay-navigation">
     <nav role="navigation">
       <ul>
-        <!-- <li><a href="#" data-content="The beginning"></a></li> -->
+        <li><a href="index.html" data-content="Curious?">
+          <p>
+          <span>
+            Home
+          </span>
+        </p></a>
+      </li>
         <li><a href="3ddesign/3ddesign.html" data-content="Curious?">
           <p>
           <span>
@@ -97,7 +103,7 @@ function startWeb(){
 </script>
 
 <script>
-document.getElementById("myDIV").addEventListener("wheel", scrollWheel);
+document.getElementById("iCOMIT").addEventListener("wheel", scrollWheel);
 var score = 1
 function scrollWheel() {
 
@@ -107,7 +113,7 @@ function scrollWheel() {
 	{
     score++
     imagenum = `icomitanimset/icomit${score}.jpg`
-    $('#myDIV').attr('src', imagenum)
+    $('#iCOMIT').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
 	}
 	else if (event.deltaY > 0)
@@ -115,7 +121,7 @@ function scrollWheel() {
     score--
     imagenum = `icomitanimset/icomit${score}.jpg`
     // $('body').css('backgroundImage', `url(${imagenum})`);
-    $('#myDIV').attr('src', imagenum)
+    $('#iCOMIT').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
 	}
 }
@@ -124,10 +130,10 @@ function scrollWheel() {
 <script>
 let start = null;
 swipescore = 1
-document.getElementById("myDIV").addEventListener('touchstart', function(e) {
+document.getElementById("iCOMIT").addEventListener('touchstart', function(e) {
     start = e.changedTouches[0];
 });
-document.getElementById("myDIV").addEventListener('touchmove', function(e) {
+document.getElementById("iCOMIT").addEventListener('touchmove', function(e) {
   let end = e.changedTouches[0];
   if(swipescore < 2 || swipescore > 98)
     swipescore = 2
@@ -136,14 +142,14 @@ document.getElementById("myDIV").addEventListener('touchmove', function(e) {
   {
     swipescore--
     imagenum = `icomitanimset/icomit${swipescore}.jpg`
-    $('#myDIV').attr('src', imagenum)
+    $('#iCOMIT').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
   else if(end.screenY - start.screenY < 0)
   {
     swipescore++
     imagenum = `icomitanimset/icomit${swipescore}.jpg`
-    $('#myDIV').attr('src', imagenum)
+    $('#iCOMIT').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
 });
@@ -167,7 +173,7 @@ document.getElementById("myDIV").addEventListener('touchmove', function(e) {
       if(score < 2 || score > 98)
       score = 2
       imagenum = `icomitanimset/icomit${score++}.jpg`
-      $('#myDIV').attr('src', imagenum)
+      $('#iCOMIT').attr('src', imagenum)
       if(document.getElementById("protip").style.display == "none"){
       clearInterval(refreshId)
     }

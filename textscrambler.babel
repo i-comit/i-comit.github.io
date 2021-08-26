@@ -61,7 +61,7 @@ class TextScramble {
   // ——————————————————————————————————————————————————
   
   const phrases = [
-    'a page programmed from scratch with coding.',
+    'a page programmed from scratch with jQuery.',
     'the city scene modeled and shaded with blender.',
     'try clicking the hamburger icon.',
     'text changing too fast? Read faster, slowpoke.'

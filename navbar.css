@@ -51,7 +51,6 @@ nav ul li {
   overflow: hidden;
   opacity: 0;
   display: none;
-  left: 8.5%;
   position: relative;
 }
 
@@ -466,6 +465,7 @@ Animation keyframes
     flex-direction: column;
   }
   nav ul li {
+    flex-basis: 16%;
     height: 25%;
     top: 20%;
     position: relative;
@@ -493,7 +493,6 @@ nav ul {
 }
 
 nav ul li {
-  flex-basis: 20%;
   justify-content: center;
   align-items: center;
   height: 100%;

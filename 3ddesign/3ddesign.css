@@ -1,14 +1,31 @@
-.container{
-margin: 3em 5px 5em;
-position: absolute;
-width: 90%;
-height: 100%;
-top: 50%;
-left: 50%;
-vertical-align: baseline;
-text-align: center;
-transform: translate(-50%, -50%);
+@import url('https://fonts.googleapis.com/css2?family=Codystar:wght@400&display=swap');
+
+body{
+    background-color: darkgray;
 }
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+#demo{
+    margin: 3em 5px 5em;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    vertical-align: baseline;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    }
+    
 
 @media (max-width: 1080px)
 {
@@ -47,4 +64,9 @@ transform: translate(-50%, -50%);
   #video{
       height: 240px;
   }
+}
+
+h2{
+    font-family: "Codystar", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
 }
