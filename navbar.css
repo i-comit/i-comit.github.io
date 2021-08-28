@@ -73,7 +73,7 @@ nav li a {
 
 nav li a:before {
   content: '';
-  width: 70px;
+  width: 7px;
   height: 2px;
   background-color: #fff;
   position: absolute;
@@ -422,11 +422,11 @@ Animation keyframes
   }
   .open-overlay span {
     display: block;
-    height: 7px;
+    height: 5px;
     background-color: #fff;
     cursor: pointer;
     margin-top: 10px;
-    width: 90px;
+    width: 80px;
   }
 }
 
@@ -539,7 +539,7 @@ nav ul li {
 
 @media (max-width: 320px) {
   .open-overlay {
-    right: .5rem;
+    right: .3rem;
     top: 8%;
   }
   
@@ -549,6 +549,6 @@ nav ul li {
     background-color: #fff;
     cursor: pointer;
     margin-top: 8px;
-    width: 35px;
+    width: 30px;
   }
 }

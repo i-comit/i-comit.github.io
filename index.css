@@ -12,10 +12,9 @@ body {
   transform: translate(-8px,-8px);
 }
 
-img{
+#iCOMIT{
   z-index: -10;
 }
-
 
 #logo {
   z-index: 10;
@@ -24,6 +23,15 @@ img{
   position: absolute;
   left: 45%;
 }
+
+#homeicon{
+  z-index: 10;
+  width: 40px;
+  top: 1%;
+  position: absolute;
+  left: 1%;
+} 
+
 
 @media(max-width: 1024px) {
     #iCOMIT{
@@ -37,8 +45,16 @@ img{
       width: 30%;
       top: 5px;
       position: absolute;
-      left: 36%;
+      left: 35%;
     }
+    #homeicon{
+      z-index: 10;
+      width: 5%;
+      top: 2%;
+      position: absolute;
+      left: 4%;
+    } 
+    
   }
 @media(max-width: 768px) {
 #iCOMIT{
@@ -51,9 +67,15 @@ img{
   z-index: 10;
   width: 29%;
   position: absolute;
-  left: 36%;
   top: 1%;
 }
+#homeicon{
+  z-index: 10;
+  width: 7%;
+  top: 2.5%;
+  position: absolute;
+  left: 4%;
+} 
 }
 
 @media(max-width: 720px) {
@@ -139,9 +161,16 @@ img{
     z-index: 10;
     width: 140px;
     position: absolute;
-    left: 130px;
+    left: 125px;
     top: 4px;
   }
+  #homeicon{
+    z-index: 10;
+    width: 9%;
+    top: 1%;
+    position: absolute;
+    left: 4%;
+  } 
 }
 
 @media(max-width: 400px) {
@@ -155,9 +184,10 @@ img{
     z-index: 10;
     width: 135px;
     position: absolute;
-    left: 120px;
+    left: 110px;
     top: 4px;
   }
+
 }
 
 @media(max-width: 375px) {
@@ -187,9 +217,16 @@ img{
   z-index: 10;
   width: 40%;
   position: absolute;
-  left: 28%;
-  top: 1%;
+  left: 27%;
+  top: 0px;
 }
+#homeicon{
+  z-index: 10;
+  width: 10%;
+  top: 1%;
+  position: absolute;
+  left: 3.5%;
+} 
 }
 @media(max-width: 320px) {
     #iCOMIT{
@@ -202,10 +239,16 @@ img{
       z-index: 10;
       width: 140px;
       position: absolute;
-      left: 25%;
+      left: 24%;
       top: 2px;
     }
-
+    #homeicon{
+      z-index: 10;
+      width: 10%;
+      top: 2%;
+      position: absolute;
+      left: 3%;
+    } 
 }
 
 .container {
