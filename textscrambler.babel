@@ -61,10 +61,9 @@ class TextScramble {
   // ——————————————————————————————————————————————————
   
   const phrases = [
-    'a page programmed from scratch with jQuery.',
+    'a page programmed from scratch using the DOM.',
     'the city scene modeled and shaded with blender.',
-    'try clicking the hamburger icon.',
-    'text changing too fast? Read faster, slowpoke.'
+    'try clicking the hamburger icon or the logo.',
   ]
   
   const el = document.querySelector('.text')

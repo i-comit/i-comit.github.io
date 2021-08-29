@@ -500,7 +500,7 @@ nav ul li {
   opacity: 0;
   display: none;
   left: 0%;
-  top: 20%;
+  top: 21%;
   position: relative;
 }
 }
@@ -539,7 +539,7 @@ nav ul li {
 
 @media (max-width: 320px) {
   .open-overlay {
-    right: .3rem;
+    right: 5px;
     top: 8%;
   }
   

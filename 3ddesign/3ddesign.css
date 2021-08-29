@@ -15,16 +15,29 @@ body{
   }
   
 #demo{
-    margin: 3em 5px 5em;
+    margin: 10% 0 5%;
     position: absolute;
-    width: 90%;
+    width: 80%;
     height: 100%;
-    top: 50%;
-    left: 50%;
+    top: 5%;
+    left: 10%;
     vertical-align: baseline;
     text-align: center;
-    transform: translate(-50%, -50%);
     }
+
+#demo section{
+    padding-bottom: 25px;
+}
+#demo h2{
+    font-family: "Codystar", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: white;
+}
+
+#demo img{
+    width: 100%;
+}
+    
     
 
 @media (max-width: 1080px)
@@ -66,7 +79,3 @@ body{
   }
 }
 
-h2{
-    font-family: "Codystar", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: xx-large;
-}

@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>i-comit: web design</title>
-
-    <link rel="stylesheet" href="webdesign.css">
-
-</head>
+<html>
 <body>
-    <div class="container">      
-    <h1>Websites I developed</h1><br>
-    <h2><a href="https://white-line-essentials.com/">White Line Essentials</a></h2><br>
-    <iframe src="https://white-line-essentials.com/" frameborder="0"></iframe>
+  <head>
+    <link rel="icon" href="indeximages/icomiti.png"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="Engineer and Web Developer">
+    <meta name="keywords" content="cad, cam, programming, dev">
+    <meta name="author" content="Khiem G Luong">
+    <link rel="stylesheet" href="webdesign.css">
+    <link rel="stylesheet" href="../logo.css">
+    <link rel="stylesheet" href="../loading.css">
 
-    </div>
-    <ul id="scene" data-friction-x="0.03"
-    data-friction-y="0.05">
-    <li class="layer" id="specks" data-depth="0.1"></li>
-    <li class="layer" id="layer-1" data-depth="0.15">
-      <div class="img" id="img-1"></div>
-    </li>
-    <li class="layer" id="layer-2" data-depth="0.25">
-      <div class="img" id="img-2"></div>
-    </li>
-    <li class="layer" id="layer-3" data-depth="0.45">
-      <div class="img" id="img-3"></div>
-    </li>
-  </ul>
-    <script src="./floatingdust.babel"></script>
+    <title>WEB DESIGN</title>
 
+  </head>
+
+  <div id="loading">
+  </div>
+
+<a href="../index.html"><img id="logo" src="../indeximages/icomitlogowhite.png"></img>
+</a>
+  <div id="demo">
+    <h2>White Line Essentials</h2>
+    <section>
+      <iframe src="https://white-line-essentials.com/" frameborder="0"  width="90%" height="80%"></iframe>
+    </section>
+  </div>
+  
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.6.0/js-cloudimage-360-view.min.js"></script>   
+
+
+<script  type='text/javascript'>
+  $("document").ready(function(){
+      $("#logo").hover(
+          function() {$(this).attr("src","../indeximages/icomitlogo.png");},
+          function() {$(this).attr("src","../indeximages/icomitlogowhite.png");
+      });
+  });
+  </script>
+
+<script>
+  window.addEventListener('load', function () {
+    var el = document.getElementById('loading');
+    el.remove()
+});
+</script>
 </body>
 </html>
-
