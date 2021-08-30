@@ -19,7 +19,6 @@ body{
     position: absolute;
     width: 80%;
     height: 100%;
-    top: 5%;
     left: 10%;
     vertical-align: baseline;
     text-align: center;
@@ -27,11 +26,18 @@ body{
 
 #demo section{
     padding-bottom: 25px;
+    position: relative;
+    top: 70px;
 }
 #demo h2{
-    font-family: "Codystar", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
-    color: white;
+    position: relative;
+    text-align: center;
+    font-family: "Codystar", Verdana, Tahoma, sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0px 10px;
+    color: #e2e2e2;
+    z-index: 100;
+    top: 60px;
 }
 
 #demo img{

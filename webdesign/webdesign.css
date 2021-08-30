@@ -11,7 +11,7 @@ body{
   display: inline;
 }
 
-#demo h1, h2,a{
+#demo h1, h2{
     position: relative;
     text-align: center;
     font-family: "Codystar", Verdana, Tahoma, sans-serif;
@@ -19,18 +19,19 @@ body{
     margin: 10px 0px 10px;
     color: #e2e2e2;
     z-index: 100;
-    top: 7%;
-
+    top: 60px;
+    font-size: 18px;
+    width: 90%;
+    left: 4.5%;
 }
 #demo iframe{
-    position: absolute;
+    position: relative;
     display: inline-block;
     z-index: 100;
     max-width: 90%;
     width: 90%;
-    left: 4%;
-    margin-top: 3%;
-    top: 5%;
+    left: 3%;
+    top: 70px;
     max-height: 600px;
     height: 500px;
     border: 1px solid rgb(32, 32, 32);
