@@ -19,7 +19,7 @@ p span {
   font-family: "Orbitron", Verdana, Geneva, Tahoma, sans-serif;
   font-size: 32px;
   letter-spacing: 0;
-  padding: .25em 0 .325em;
+  padding: .25em 0 .25em;
   display: block;
   margin: 0 auto;
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
@@ -66,6 +66,7 @@ p span {
     padding: .25em 0 .25em;
     display: block;
     margin: 0 auto;
+    padding: .2em 0 .2em;
   }
 }
 
@@ -115,6 +116,7 @@ p span {
   }
   p span {
     font-size: 24px;
+    padding: .15em 0 .15em;
   }
 }
 
@@ -123,7 +125,7 @@ p span {
     text-transform: uppercase;
     letter-spacing: .5em;
     border-width: 4px 0;
-    padding: .5em 0em;
+    padding: .35em 0em;
     position: absolute;
     left: 9%;
     width: 16em;
@@ -157,7 +159,7 @@ p span {
   p span {
     font-size: 20px;
     letter-spacing: 4px;
-    padding: .25em 0 .25em;
+    padding: .1em 0 .1em;
   }
 }
 
@@ -174,6 +176,5 @@ p span {
   p span {
     font-size: 18px;
     letter-spacing: 5px;
-    padding: 0 0 .2em;
   }
 }
