@@ -85,7 +85,8 @@
   @media(max-width: 320px) {
       #logo {
         width: 140px;
-        left: 27%;
+        left: 29%;
+        top: 19px;
 
       }
   }
