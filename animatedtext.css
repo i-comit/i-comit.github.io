@@ -55,7 +55,7 @@ p span {
     border-width: 4px 0;
     padding: 0.8em 0em;
     position: absolute;
-    top: 5%;
+    top: 6%;
     left: 2vw;
     width: 15em;
     margin: 0 0 0 1em;
@@ -77,9 +77,7 @@ p span {
     display: inline-block;
     border: 4px double rgba(255, 255, 255, 0.25);
     border-width: 4px 0;
-    padding: 1.1em 0em;
-    position: absolute;
-    top: 5%;
+    padding: 0.7em 0em;
     left: 6vw;
     width: 15em;
     margin: 0 0 0 1em;
@@ -97,7 +95,6 @@ p span {
     display: inline-block;
     border: 4px double rgba(255, 255, 255, 0.25);
     border-width: 4px 0;
-    padding: 1.1em 0em;
     position: absolute;
     top: 5%;
     left: 13.5vw;
@@ -108,18 +105,13 @@ p span {
 
 @media(max-width: 480px) {
   p {
-    padding: 0.6em 0em;
     text-transform: uppercase;
     letter-spacing: .5em;
-    display: inline-block;
-    border: 4px double rgba(255, 255, 255, 0.25);
     border-width: 4px 0;
-    padding: 1.1em 0em;
+    padding: 0.6em 0em;
     position: absolute;
-    top: 8%;
     left: 8vw;
     width: 17em;
-    margin: 0 0 0 2em;
   }
   p span {
     font-size: 24px;
@@ -130,11 +122,9 @@ p span {
   p {
     text-transform: uppercase;
     letter-spacing: .5em;
-    display: inline-block;
     border-width: 4px 0;
-    padding: .6em 0em;
+    padding: .5em 0em;
     position: absolute;
-    top: 5%;
     left: 9%;
     width: 16em;
     margin: 0 0 0 2em;
@@ -149,7 +139,7 @@ p span {
     display: inline-block;
     border-width: 4px 0;
     position: absolute;
-    top: 6%;
+    top: 3%;
     left: 8%;
     width: 16em;
     margin: 0 0 0 2em;
@@ -177,7 +167,6 @@ p span {
     border-width: 4px 0;
     padding: 0.3em 0em;
     position: absolute;
-    top: 5%;
     left: 7%;
     width: 12em;
     margin: 0 0 0 2em;
