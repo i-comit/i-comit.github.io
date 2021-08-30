@@ -74,15 +74,14 @@
   
   @media(max-width: 360px) {
   #logo {
-    left: 30%;
-    top: 12px;
+    left: 29.5%;
+    top: 12.5px;
   }
   }
   @media(max-width: 320px) {
       #logo {
         width: 140px;
-        left: 29%;
-        top: 13px;
+        left: 28.5%;
 
       }
   }
