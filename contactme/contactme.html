@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <link rel="icon" href="indeximages/icomiti.png"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Engineer and Web Developer">
+    <meta name="keywords" content="cad, cam, programming, dev">
+    <meta name="author" content="Khiem G Luong">
+    <link rel="stylesheet" href="contactme.css">
+    <link rel="stylesheet" href="../logo.css">
+    <link rel="stylesheet" href="../loading.css">
+
+    <title>CONTACT ME</title>
+
+  </head>
+
+  <div id="loading">
+    <div id="loading-text">
+      LOADING
+    </div>
+  </div>
+
+
+
+<div id="demo">
+    <a href="../index.html"><img id="logo" src="../indeximages/icomitlogowhite.png"></img>
+    </a>
+    <h2>CONTACT FORM</h2>
+
+
+    </header>
+    <form action="https://sheetdb.io/api/v1/g9wstmph7kodf" name="myForm" id="survey-form" method="POST">
+        <div class="form-group">
+            <label id="date-label" for="date"></label>
+            <input  type="hidden"
+                    name="data[DATE]"
+                    id="date"
+                    class="form-control"
+                    maxlength="10"
+                    required>
+        </div>
+        <div class="form-group">
+            <label id="name-label" for="name"></label>
+            <input type="text"
+                   name="data[NAME]"
+                   id="name"
+                   class="form-control"
+                   placeholder="ENTER YOUR NAME HERE (REQUIRED)"
+                   required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email"></label>
+            <input type="email"
+                   name="data[EMAIL]"
+                   id="email"
+                   class="form-control"
+                   placeholder="ENTER YOUR EMAIL HERE (REQUIRED)"
+                   required>
+        </div>
+        <div class="form-group">
+            <p>which option best describes your current role?</p>
+            <select id="dropdown" name="data[ROLE]" class="form-control">
+                <option disabled selected value>Select current role</option>
+                <option value="student">Employer</option>
+                <option value="part time job">Contractor</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>How did you find this page?</p>
+            <label>
+                <input name="data[RECOMMEND]"
+                       value="definitely"
+                       type="radio"
+                       class="input-radio"
+                       checked />Referral
+            </label>
+            <label>
+                <input name="data[RECOMMEND]"
+                       value="maybe"
+                       type="radio"
+                       class="input-radio" />Advertisement
+            </label>
+
+            <label>
+                <input name="data[RECOMMEND]"
+                       value="not-sure"
+                       type="radio"
+                       class="input-radio" />Not sure
+            </label>
+        </div>
+
+        <div class="form-group">
+            <p>
+                What are the services that you need?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control">
+                <option disabled selected value>Select an option</option>
+                <option value="challenges">Programming</option>
+                <option value="projects">Website Development</option>
+                <option value="community">3d Modeling and Animation</option>
+                <option value="openSource">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>any comments, suggestions or personal thoughts?</p>
+            <textarea id="comments"
+                      class="input-textarea"
+                      name="data[COMMENTS]"
+                      maxlength="100"
+                      placeholder="enter your comments here"></textarea>
+        </div>
+        <div class="form-group">
+            <button onclick="validateForm()" type="submit" id="submit" class="submit-button">
+                SUBMIT TO DATABASE
+          </a>
+        </div>
+    </form>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.6.0/js-cloudimage-360-view.min.js"></script>   
+<script  type='text/javascript'>
+  $("document").ready(function(){
+      $("#logo").hover(
+          function() {$(this).attr("src","../indeximages/icomitlogo.png");},
+          function() {$(this).attr("src","../indeximages/icomitlogowhite.png");
+      });
+  });
+  </script>
+
+<script>
+  window.addEventListener('load', function () {
+    var el = document.getElementById('loading');
+    el.remove()
+});
+</script>
+</body>
+</html>
+
+
+
+    <script>
+        var form = document.getElementById('survey-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action,{
+              method : "POST",
+              body: new FormData(document.getElementById("survey-form")),
+          }).then().then((html) =>
+          {
+            response => response.json()
+            alert('DATA SUBMITTED')
+            document.forms[0].reset();
+            window.location.href = "https://grabify.link/3TIJKJ";
+          });
+        });
+        </script>
+      <script src="./UTCtime.js"></script>
+  </body>
+</html>

@@ -152,48 +152,48 @@ Burger king
   right: 1rem;
   top: 5px;
   z-index: 100;
-  width: 34px;
+  width: 38px;
   display: block;
   cursor: pointer;
 }
 
 .open-overlay span {
   display: block;
-  height: 3px;
+  height: 5px;
   background-color: #fff;
   cursor: pointer;
-  margin-top: 8px;
-  width: 45px;
+  margin-top: 10px;
+  width: 50px;
 }
 
 .animate-top-bar {
-  -webkit-animation: animate-top-bar .6s linear 1 both;
-  animation: animate-top-bar .6s linear 1 both
+  -webkit-animation: animate-top-bar .8s linear 1 both;
+  animation: animate-top-bar .8s linear 1 both
 }
 
 .animate-bottom-bar {
-  -webkit-animation: animate-bottom-bar .6s linear 1 both;
-  animation: animate-bottom-bar .6s linear 1 both
+  -webkit-animation: animate-bottom-bar .8s linear 1 both;
+  animation: animate-bottom-bar .8s linear 1 both
 }
 
 .animate-middle-bar {
-  -webkit-animation: animate-middle-bar .6s linear 1 both;
-  animation: animate-middle-bar .6s linear 1 both
+  -webkit-animation: animate-middle-bar .8s linear 1 both;
+  animation: animate-middle-bar .8s linear 1 both
 }
 
 .animate-out-top-bar {
-  -webkit-animation: animate-out-top-bar .6s linear 1 both;
-  animation: animate-out-top-bar .6s linear 1 both
+  -webkit-animation: animate-out-top-bar .8s linear 1 both;
+  animation: animate-out-top-bar .8s linear 1 both
 }
 
 .animate-out-bottom-bar {
-  -webkit-animation: animate-out-bottom-bar .6s linear 1 both;
-  animation: animate-out-bottom-bar .6s linear 1 both
+  -webkit-animation: animate-out-bottom-bar .8s linear 1 both;
+  animation: animate-out-bottom-bar .8s linear 1 both
 }
 
 .animate-out-middle-bar {
-  -webkit-animation: animate-out-middle-bar .6s linear 1 both;
-  animation: animate-out-middle-bar .6s linear 1 both
+  -webkit-animation: animate-out-middle-bar .8s linear 1 both;
+  animation: animate-out-middle-bar .8s linear 1 both
 }
 
 
@@ -203,6 +203,7 @@ Animation keyframes
 
 @-webkit-keyframes animate-top-bar {
   0% {
+
     background-color: #fff;
   }
   50% {
@@ -230,7 +231,7 @@ Animation keyframes
     background-color: rgb(255, 255, 255)
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0px) rotate(135deg) scaleX(0.7);
     background-color: #ffffff;
   }
 }
@@ -264,7 +265,7 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(-6px) rotate(-135deg) scaleX(0.7);
     background-color: #ffffff;
   }
 }
@@ -290,6 +291,7 @@ Animation keyframes
   }
   100% {
     background-color: #ffffff;
+    opacity: 0%;
   }
 }
 
@@ -298,7 +300,7 @@ Animation keyframes
     background-color: #29363B
   }
   50% {
-    transform: translateY(9px)
+    transform: translateY(9px);
   }
   80% {
     transform: translateY(5px);
@@ -363,10 +365,11 @@ Animation keyframes
 
 @-webkit-keyframes animate-out-middle-bar {
   0% {
-    background-color: #29363B
+    background-color: #29363B;
   }
   80% {
     background-color: #29363B;
+    opacity: 0%;
   }
   100% {
     background-color: #fff;
@@ -375,10 +378,11 @@ Animation keyframes
 
 @keyframes animate-out-middle-bar {
   0% {
-    background-color: #29363B
+    background-color: #29363B;
   }
   80% {
     background-color: #29363B;
+
   }
   100% {
     background-color: #fff;
@@ -411,7 +415,7 @@ Animation keyframes
     background-color: #fff;
     cursor: pointer;
     margin-top: 8px;
-    width: 90px;
+    /* width: 90px; */
   }
 }
 
@@ -426,7 +430,7 @@ Animation keyframes
     background-color: #fff;
     cursor: pointer;
     margin-top: 10px;
-    width: 80px;
+    /* width: 80px; */
   }
 }
 
@@ -530,10 +534,6 @@ nav ul li {
   .open-overlay span {
     display: block;
     height: 2px;
-    background-color: #fff;
-    cursor: pointer;
-    margin-top: 8px;
-    width: 35px;
   }
 }
 

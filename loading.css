@@ -14,9 +14,10 @@
 }
 
 #loading-text {
-  position: fixed;
+  position: inherit;
   font-family: "Quattrocento Sans", Verdana, Geneva, Tahoma, sans-serif;
   top: 50%;
+  z-index: inherit;
   bottom: 0;
   right: 0;
   margin: auto;
