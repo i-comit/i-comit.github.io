@@ -1,18 +1,48 @@
 #logo {
     z-index: 100;
     width: 100%;
-    top: -140px;
+    top: -17%;
     position: fixed;
-    transform: scale(.12);
-    left: 0%;
+    transform: scale(.1);
+    left:0;
+    right:0;
+    margin:0 auto;
     
   }
+
+  @media(max-width: 1920px) {
+    #logo {
+      top: -13%;
+      transform: scale(.11);
+    }
+  }
+
+  @media(max-width: 1600px) {
+    #logo {
+      top: -12%;
+      transform: scale(.12);
+    }
+  }
   
+  
+  @media(max-width: 1440px) {
+    #logo {
+      top: -11%;
+      transform: scale(.13);
+    }
+  }
+  
+  @media(max-width: 1280px) {
+    #logo {
+      top: -7%;
+      transform: scale(.2);
+    }
+  }
+
   @media(max-width: 1024px) {
       #logo {
         top: -30px;
         transform: scale(.25);
-        /* left: 35%; */
       }
     }
   @media(max-width: 768px) {
@@ -35,8 +65,7 @@
   
   @media(max-width: 320px) {
       #logo {
-        top: 0px;
-        transform: scale(0.3);
+        transform: scale(0.35);
 
       }
   }

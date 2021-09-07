@@ -149,8 +149,8 @@ Burger king
 
 .open-overlay {
   position: absolute;
-  right: 1rem;
-  top: 5px;
+  right: 1.5rem;
+  top: 3px;
   z-index: 100;
   width: 38px;
   display: block;
@@ -231,7 +231,7 @@ Animation keyframes
     background-color: rgb(255, 255, 255)
   }
   100% {
-    transform: translateY(0px) rotate(135deg) scaleX(0.7);
+    transform: translateY(0px);
     background-color: #ffffff;
   }
 }
@@ -265,7 +265,7 @@ Animation keyframes
     background-color: #fff;
   }
   100% {
-    transform: translateY(-6px) rotate(-135deg) scaleX(0.7);
+    transform: translateY(0px);
     background-color: #ffffff;
   }
 }
@@ -291,7 +291,6 @@ Animation keyframes
   }
   100% {
     background-color: #ffffff;
-    opacity: 0%;
   }
 }
 
@@ -369,7 +368,6 @@ Animation keyframes
   }
   80% {
     background-color: #29363B;
-    opacity: 0%;
   }
   100% {
     background-color: #fff;
@@ -406,22 +404,20 @@ Animation keyframes
 
 @media (max-width: 1080px){
   .open-overlay {
-    right: 4em;
-    top: 1em;
+    right: 4.5em;
+    top: 0.5em;
   }
   .open-overlay span {
     display: block;
-    height: 8px;
+    height: 7px;
     background-color: #fff;
     cursor: pointer;
     margin-top: 8px;
-    /* width: 90px; */
   }
 }
 
 @media (max-width: 1024px){
   .open-overlay {
-    right: 5em;
     top: 1.5em;
   }
   .open-overlay span {
@@ -456,7 +452,7 @@ Animation keyframes
   }
   .open-overlay {
     right: 1rem;
-    top: 2.2rem;
+    top: 1.2rem;
   }
   nav li a:before {
     width: 25px;
@@ -545,10 +541,10 @@ nav ul li {
   
   .open-overlay span {
     display: block;
-    height: 2px;
+    height: 3px;
     background-color: #fff;
     cursor: pointer;
     margin-top: 8px;
-    width: 30px;
+    width: 36px;
   }
 }
