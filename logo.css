@@ -12,7 +12,7 @@
 
   @media(max-width: 1920px) {
     #logo {
-      top: -13%;
+      top: -15%;
       transform: scale(.11);
     }
   }
