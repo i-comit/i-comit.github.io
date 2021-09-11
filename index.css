@@ -16,7 +16,6 @@ body {
 @media(max-width: 1024px) {
     #iCOMIT{
         width: 150%;
-        transform: translate(-235px, -8px);
         height: 100%;
         z-index: -1;
     }
@@ -24,7 +23,6 @@ body {
 @media(max-width: 768px) {
 #iCOMIT{
     width: 180%;
-    transform: translate(-305px, -8px);
     height: 100%;
     z-index: -1;
 }
@@ -33,42 +31,29 @@ body {
 @media(max-width: 720px) {
     #iCOMIT{
         width: 200%;
-        transform: translate(-335px, -8px);
-        height: 100%;
-        z-index: -1;
     }
   }
 @media(max-width: 640px) {
 #iCOMIT{
     width: 250%;
-    transform: translate(-480px, -8px);
-    height: 100%;
-    z-index: -1;
 }
 
 }
 @media(max-width: 600px) {
     #iCOMIT{
         width: 250%;
-        transform: translate(-455px, -8px);
-        height: 100%;
-        z-index: -1;
     }
   }
   @media(max-width: 540px) {
     #iCOMIT{
         width: 240%;
-        transform: translate(-400px, -8px);
-        height: 100%;
-        z-index: -1;
     }
   }
 
 @media(max-width: 480px) {
 #iCOMIT{
     width: 275%;
-    transform: translate(-395px, -8px);
-    height: 100%;
+    transform: translateX(-395px);
     z-index: -1;
 }
 }
@@ -77,7 +62,7 @@ body {
 @media(max-width: 440px) {
   #iCOMIT{
       width: 300%;
-      transform: translate(-415px, -8px);
+      transform: translateX(-415px);
       height: 100%;
       z-index: -1;
   }
@@ -86,7 +71,7 @@ body {
 @media(max-width: 400px) {
   #iCOMIT{
       width: 300%;
-      transform: translate(-415px, -8px);
+      transform: translateC(-415px);
       height: 100%;
       z-index: -1;
   }
@@ -95,7 +80,7 @@ body {
 @media(max-width: 375px) {
   #iCOMIT{
       width: 300%;
-      transform: translate(-360px, -8px);
+      transform: translateC(-360px);
       height: 100%;
       z-index: -1;
   }
@@ -104,18 +89,10 @@ body {
 @media(max-width: 360px) {
 #iCOMIT{
     width: 300%;
-    transform: translate(-360px, -8px);
+    transform: translateX(-360px);
     height: 100%;
     z-index: -1;
 }
-}
-@media(max-width: 320px) {
-    #iCOMIT{
-        width: 300%;
-        transform: translate(-360px, -8px);
-        height: 100%;
-        z-index: -1;
-    }
 }
 
 .container {
