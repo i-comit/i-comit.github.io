@@ -12,11 +12,8 @@
 
   @media(max-width: 1920px) {
     #logo {
-<<<<<<< HEAD
       top: -14.5%;
-=======
       top: -15%;
->>>>>>> e932e045fecbd167746ed766726b833249194fa2
       transform: scale(.11);
     }
   }
