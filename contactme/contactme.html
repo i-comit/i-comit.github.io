@@ -115,7 +115,7 @@
                       placeholder="enter your comments here"></textarea>
         </div>
         <form action="?" method="POST">
-          <div class="g-recaptcha" data-theme="dark" data-sitekey="6LeNdLkcAAAAAHLoKdLnOhrt0cgBBhXAHCir_9uN"></div>
+          <div class="g-recaptcha" data-theme="dark" data-sitekey="6LeNdLkcAAAAAHLoKdLnOhrt0cgBBhXAHCir_9uN" data-callback="verifyCaptcha"></div>
           <br/>
           <input type="submit" id="submit" value="Submit">
         </form>
@@ -148,22 +148,34 @@
 });
 </script>
 <script>
-  var form = document.getElementById('survey-form');
-  form.addEventListener("submit", e => {
+  var captchResponse = $('#g-recaptcha-response').val();
+$('form').on('submit', function(e) {
+  if(grecaptcha.getResponse() == "") {
     e.preventDefault();
-    fetch(form.action,{
-        method : "POST",
-        body: new FormData(document.getElementById("survey-form")),
-    }).then().then((html) =>
-    {
-      response => response.json()
-      alert('data submitted, redirecting to home page..')
-      document.forms[0].reset();
-      window.location.href = "https://grabify.link/J73F84";
-      // https://grabify.link/track/GJVYVM \\
+    alert("You must verify the captcha..");
+  } else {
+    verifyCaptcha()
+  }
+});
+  verifyCaptcha = () => {
+    
+    var form = document.getElementById('survey-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action,{
+          method : "POST",
+          body: new FormData(document.getElementById("survey-form")),
+      }).then().then((html) =>
+      {
+        response => response.json()
+        alert('data submitted, redirecting to home page..')
+        document.forms[0].reset();
+        window.location.href = "https://grabify.link/J73F84";
+        // https://grabify.link/track/GJVYVM \\
 
-    });
+      });
   });
+}
   </script>
     <script src="./UTCtime.js"></script>
 </body>
