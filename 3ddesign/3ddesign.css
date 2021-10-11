@@ -40,7 +40,7 @@ body{
     top: 60px;
 }
 
-#demo img{
+#demo img, #demo video{
     width: 100%;
 }
     
