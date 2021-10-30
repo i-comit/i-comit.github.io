@@ -30,7 +30,7 @@ body {
 @media(max-width: 1024px){
   .text {
     font-family: 'Codystar', 'Megrim', Courier, monospace;
-    font-size: 52px;
+    font-size: 44px;
     bottom: 60px;
 }
 }
