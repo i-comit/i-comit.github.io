@@ -21,7 +21,7 @@ html {
   width: inherit;
   height: inherit;
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 10%;
 }
 
 body {
@@ -56,7 +56,7 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .slider {
-    height: 100vh;
+    height: 110vh;
   }
 }
 .slider .box {
@@ -95,7 +95,7 @@ body {
     width: 100%;
     left: 0;
     bottom: 0;
-    height: 54%;
+    height: 540%;
     transform: skewX(0deg);
   }
 }
@@ -129,8 +129,8 @@ body {
     grid-row: 2/span 1;
     grid-column: 1/-1;
     text-align: center;
-    padding: 2rem;
-    transform: translateY(-9rem);
+    padding: 1rem 15px 1rem;
+    transform: translateY(-7rem);
   }
 }
 .slider .box .details h1 {
@@ -172,13 +172,13 @@ body {
   background-color: #363636;
 }
 .slider .box1 .illustration .inner {
-  background-color: #FF0077;
+  background-color: #b4b4b4;
 }
 .slider .box1 .illustration .inner::after, .slider .box1 .illustration .inner::before {
-  background-color: rgba(255, 0, 119, 0.4);
+  background-color: rgba(139, 139, 139, 0.4);
 }
 .slider .box1 button {
-  background-color: #FF0077;
+  background-color: #464646;
 }
 .slider .box2 {
   background-color: #b6b6b6;
@@ -212,22 +212,22 @@ body {
   display: none;
 }
 .slider .box4 .illustration .inner::after, .slider .box4 .illustration .inner::before {
-  background-color: rgba(255, 78, 0, 0.4);
+  background-color: rgba(78, 78, 78, 0.4);
 }
 .slider .box4 button {
-  background-color: #FF4E00;
+  background-color: #555555;
 }
 .slider .box5 {
-  background-color: #300050;
+  background-color: #6d6d6d;
 }
 .slider .box5 .illustration .inner {
-  background-color: #8000FF;
+  background-color: #575757;
 }
 .slider .box5 .illustration .inner::after, .slider .box5 .illustration .inner::before {
-  background-color: rgba(128, 0, 255, 0.4);
+  background-color: rgba(100, 100, 100, 0.4);
 }
 .slider .box5 button {
-  background-color: #8000FF;
+  background-color: #3f3f3f;
 }
 .slider .illustration {
   grid-column: 2/-1;
@@ -241,20 +241,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 100px;
   }
 }
 .slider .illustration div {
   height: 40rem;
   width: 50rem;
   border-radius: 3rem;
-  background-color: #FF0077;
+  background-color: #363636;
   position: relative;
   /* transform: skewX(-10deg); */
 }
 @media only screen and (max-width: 800px) {
   .slider .illustration div {
-    height: 30rem;
-    width: 35rem;
+    height: 24rem;
+    width: 24rem;
   }
 }
 .slider .illustration div::after, .slider .illustration div::before {

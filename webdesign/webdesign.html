@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="webdesign.css">
     <link rel="stylesheet" href="../logo.css">
     <link rel="stylesheet" href="../loading.css">
-
+    <link rel="stylesheet" href="flipcard.css">
     <title>WEB DESIGN</title>
 
   </head>
@@ -29,17 +29,56 @@
 
     <section>
       <h2>White Line Essentials</h2>
-      <iframe src="https://white-line-essentials.com/" frameborder="0"  width="90%" height="50%"></iframe>
-    </section>
-  </div>
-  
+      <h3>eCommerce Web Development using Managed WordPress</h3>
+      <iframe src="https://white-line-essentials.com/" frameborder="0"  width="50%" height="50%"></iframe>
+      </section>
 
+      <!-- <section>      
+        <h2>Avatar Cartoonization with Adobe Photoshop</h2>
+      </section>
+    <section>
+      <div class="desktopcard" id="desktopcard">
+        <div class="card1">
+        <img src="Foto Hans - professional-photoshop v1.png"/>
+        <img src="Foto Hans - professional.jpg" />
+        </div>
+        </div>
+
+      </section>
+      <section>
+      <div class="cardcontainer" id="mobilecard">
+        <div class="card">
+          <div class="front">
+            <img src="Foto Hans - professional-photoshop v1.png"/>
+          </div>
+          <div class="back">
+            <img src="Foto Hans - professional.jpg" />
+          </div>
+        </div>
+      </div> 
+    </section> -->
+  </div>
+
+  <script> 
+    window.addEventListener('load', function () {  
+
+    if(screen.width <= 1080){
+      document.getElementById("desktopcard").style.display = "none";
+      document.getElementById("mobilecard").style.display = "flex";
+      }
+      if(screen.width >= 1080){
+        document.getElementById("desktopcard").style.display = "inline-flex";
+        document.getElementById("mobilecard").style.display = "none";
+      }
+    })
+  </script>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/2.6.0/js-cloudimage-360-view.min.js"></script>   
+<script src="./flipcard.js"></script>
 
 
 <script  type='text/javascript'>
@@ -50,12 +89,25 @@
       });
   });
   </script>
-
+<script type='text/javascript'>
+window.addEventListener('resize', function(event) {
+  if(screen.width <= 1080){
+    document.getElementById("desktopcard").style.display = "none";
+    document.getElementById("mobilecard").style.display = "flex";
+  }
+  if(screen.width >= 1080){
+    document.getElementById("desktopcard").style.display = "flex";
+    document.getElementById("mobilecard").style.display = "none";
+  }
+}, true);
+</script>
 <script>
   window.addEventListener('load', function () {
     var el = document.getElementById('loading');
     el.remove()
+
 });
 </script>
+
 </body>
 </html>
