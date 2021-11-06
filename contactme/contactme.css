@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@400&display=swap');
 
 :root {
-	--color-white: #f3f3f3;
+	--color-white: #a0a0a0;
 	--color-darkblue: #1b1b32;
 	--color-darkblue-alpha: rgba(27, 27, 50, 0.8);
 	--color-green: #37af65;
@@ -13,13 +13,14 @@ body {
 	font-weight: 400;
 	line-height: 1.4;
 	color: var(--color-white);
+	background-color: #292929;
 	margin: 0;
 }
 
 	/* mobile friendly alternative to using background-attachment: fixed */
 	body::before {
 		content: '';
-		position: fixed;
+		position: relative;
 		top: 0;
 		left: 0;
 		height: 100%;
@@ -32,13 +33,6 @@ body {
 		background-position: center;
 		text-align: center;
 	}
-
-h1 {
-	font-weight: 400;
-	line-height: 1.2;
-	text-align: center;
-}
-
 p {
 	font-size: 1.125rem;
 	text-align: center;
@@ -182,7 +176,7 @@ form {
 
 #demo{
     margin: 2% 0 4%;
-    position: fixed;
+    position: relative;
     width: 80%;
     height: 100%;
     left: 10%;
@@ -190,7 +184,7 @@ form {
     text-align: center;
     }
 
-@media (max-width: 1024px){
+/* @media (max-width: 1024px){
     #demo{
         margin-top: 5%;
         position: fixed;
@@ -201,20 +195,38 @@ form {
     #demo{
         position: absolute;
     }
+} */
+
+#demo #selfimg{
+	width: 90%;
+	border-radius: 5%;
+	
 }
     
 #demo section{
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     position: relative;
-    top: 70px;
+    top: 10px;
 }
 #demo h2{
     position: relative;
     text-align: center;
     font-family: "Codystar", Verdana, Tahoma, sans-serif;
     text-transform: uppercase;
-    margin: 10px 0px 5px;
-    color: #e2e2e2;
+    margin: 20px 0px 5px;
+    font-size: 120%;
+    color: #ffffff;
+    z-index: 100;
+    top: 60px;
+}
+#demo h3{
+    position: relative;
+    text-align: center;
+    font-family: "Codystar", Verdana, Tahoma, sans-serif;
+    text-transform: uppercase;
+    margin: 0px 30px 0px;
+    font-size: 90%;
+    color: #b3b3b3;
     z-index: 100;
     top: 60px;
 }
