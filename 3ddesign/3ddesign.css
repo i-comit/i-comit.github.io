@@ -67,8 +67,12 @@ body{
     top: 60px;
 }
 
+#demo img{
+    width: 90%;
+}
 
-#demo img, #demo video{
+
+#demo video{
     width: 100%;
 }
     
