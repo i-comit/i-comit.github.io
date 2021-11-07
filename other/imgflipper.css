@@ -22,7 +22,7 @@
   }
   .card1 img {
     margin: 10px;
-    border-radius: 3%;
+    /* border-radius: 3%; */
   }
   .card {
     width: 100%;
@@ -37,7 +37,7 @@
   .card img {
     width: inherit;
     height: inherit;
-    border-radius: 3%;
+    /* border-radius: 3%; */
   }
   .card div {
     position: absolute;

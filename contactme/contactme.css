@@ -16,26 +16,45 @@ body {
 	background-color: #292929;
 	margin: 0;
 }
-
-	/* mobile friendly alternative to using background-attachment: fixed */
-	body::before {
-		content: '';
-		position: relative;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		z-index: -1;
-		background: white;
-		background-image: linear-gradient( 115deg, rgba(89, 23, 1, 0.8), rgba(126, 166, 216, 0.7) ), url(../icomitanimset/icomit0.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-		text-align: center;
-	}
-p {
-	font-size: 1.125rem;
+/* mobile friendly alternative to using background-attachment: fixed */
+body::before {
+	content: '';
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background: white;
+	background-image: linear-gradient( 115deg, rgba(89, 23, 1, 0.8), rgba(126, 166, 216, 0.7) ), url(../icomitanimset/icomit0.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 	text-align: center;
+}
+
+#row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	}
+@media  (max-width: 1000px){
+	#row {
+		display: block;
+	}
+}
+.column {
+display: flex;
+flex-direction: column;
+flex-basis: 100%;
+margin: 20px;
+flex: 1;
+}
+p {
+	font-size: 90%;
+	text-align: center;
+	font-family: 'Codystar';
 }
 
 h1,
@@ -198,11 +217,11 @@ form {
 } */
 
 #demo #selfimg{
-	width: 90%;
+	width: 100%;
 	border-radius: 5%;
 	
 }
-    
+
 #demo section{
     padding-bottom: 10px;
     position: relative;
@@ -213,8 +232,8 @@ form {
     text-align: center;
     font-family: "Codystar", Verdana, Tahoma, sans-serif;
     text-transform: uppercase;
-    margin: 20px 0px 5px;
-    font-size: 120%;
+    margin: 20px 0px 15px;
+    font-size: 110%;
     color: #ffffff;
     z-index: 100;
     top: 60px;
@@ -225,7 +244,7 @@ form {
     font-family: "Codystar", Verdana, Tahoma, sans-serif;
     text-transform: uppercase;
     margin: 0px 30px 0px;
-    font-size: 90%;
+    font-size: 80%;
     color: #b3b3b3;
     z-index: 100;
     top: 60px;

@@ -2,6 +2,7 @@
 
 body{
     background-color: darkgray;
+    margin: 0;
 }
 .container {
     position: relative;
@@ -13,6 +14,7 @@ body{
     align-items: center;
     display: flex;
   }
+
   
 #demo{
     margin: 10% 0 5%;
@@ -25,9 +27,10 @@ body{
     }
 
 #demo section{
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     position: relative;
-    top: 70px;
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 #demo h1{
