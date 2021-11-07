@@ -22,6 +22,7 @@ body {
   bottom: 3vh;
   text-align: center;
   left: 0%;
+  z-index: 0;
 }
 .dud {
   color: #555555;
