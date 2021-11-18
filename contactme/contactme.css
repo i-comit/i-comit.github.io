@@ -7,6 +7,12 @@
 	--color-green: #37af65;
 }
 
+canvas{
+	position: fixed;
+	top: 10px;
+	z-index: -1;
+}
+
 body {
 	font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
 	font-size: 1rem;

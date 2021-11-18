@@ -1,0 +1,93 @@
+body {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;	
+	background: #666;
+	color: #454545;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+div {
+	box-sizing: border-box;
+	transition: all ease-in-out .5s;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+}
+.icetab {
+	border: 2px solid #afafaf;
+	display: inline-block; 
+	border-bottom: 0px;	
+	margin-bottom: 10px;	
+  color: #fff;
+	cursor: pointer;
+}
+/* .icetab:last-child {
+	border-right: 2px solid #ff9900;	
+    border-bottom: 0px;	
+} */
+
+#icetab-container {
+    text-align: center;
+}
+#icetab-content {
+	overflow:auto;
+	position: relative;
+	border-top: 2px solid #3a3a3a;
+    bottom: 10px;
+}
+
+.tabcontent {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: #fff;
+	width: 100%;
+	/* border-top: 0px; */
+	border: 2px solid #4d4d4d;
+	transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+
+.tabcontent:first-child {
+	position: relative;	
+}
+.tabcontent.tab-active {
+	border-top: 0px;
+	display: inline-flex;
+    flex-direction: column;
+	transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+}
+
+.container {
+  max-width: 90%;
+  margin: 100px 0px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabcontent {
+	padding: 10px;
+}
+
+.cardcontainer{
+    width: 100%;
+}
+
+.tabcontent video, .tabcontent img{
+    width: 100%;
+    align-items: center;
+    display: block;
+    position: relative;
+    padding: 0px;
+}
+.icetab {
+	padding: 10px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.current-tab { 
+	background: #222222;
+}
