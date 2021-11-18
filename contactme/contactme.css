@@ -9,17 +9,17 @@
 
 canvas{
 	position: fixed;
-	top: 10px;
+	top: 0;
 	z-index: -1;
 }
 
 body {
 	font-family: Verdana, Geneva, Tahoma, Arial, sans-serif;
 	font-size: 1rem;
-	font-weight: 400;
+	font-weight: bold;
 	line-height: 1.4;
 	color: var(--color-white);
-	background-color: #292929;
+	background-color: black;
 	margin: 0;
 }
 /* mobile friendly alternative to using background-attachment: fixed */
@@ -58,8 +58,9 @@ margin: 20px;
 flex: 1;
 }
 p {
-	font-size: 90%;
+	font-size: 85%;
 	font-family: 'Codystar';
+	font-weight: bold;
 }
 
 h1,
@@ -237,8 +238,9 @@ form {
     text-align: center;
     font-family: "Codystar", Verdana, Tahoma, sans-serif;
     text-transform: uppercase;
+	font-weight: bold;
     margin: 20px 0px 15px;
-    font-size: 110%;
+    font-size: 90%;
     color: #ffffff;
     z-index: 100;
     top: 60px;
@@ -246,10 +248,11 @@ form {
 #demo h3{
     position: relative;
     text-align: center;
+	font-weight: bold;
     font-family: "Codystar", Verdana, Tahoma, sans-serif;
     text-transform: uppercase;
     margin: 0px 20px 0px;
-    font-size: 80%;
+    font-size: 100%;
     color: #b3b3b3;
     z-index: 100;
     top: 60px;
