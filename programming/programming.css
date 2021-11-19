@@ -11,15 +11,11 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
 }
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 57%;
-  }
-}
+
 
 #video{
-  width: inherit;
-  height: inherit;
+  width: 90%;
+  height: 90%;
   padding: 10px;
   border-radius: 10%;
 }
@@ -33,6 +29,14 @@ body {
 @media only screen and (max-width: 1000px) {
   body {
     padding: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 57%;
+  }
+  .container{
+    left: 5%;
   }
 }
 
