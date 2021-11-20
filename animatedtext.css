@@ -10,7 +10,7 @@ p {
   padding: 1.1em 0em;
   position: absolute;
   top: 20%;
-  left: 3vw;
+  left: 15%;
   width: 30em;
   margin: 0 0 0 0em;
 }
@@ -61,7 +61,6 @@ p span {
     margin: 0 0 0 1em;
   }
   p span {
-    font-size: 30px;
     letter-spacing: 0;
     padding: .25em 0 .25em;
     display: block;
@@ -76,16 +75,14 @@ p span {
     text-transform: uppercase;
     letter-spacing: .5em;
     display: inline-block;
-    border: 4px double rgba(255, 255, 255, 0.25);
-    border-width: 4px 0;
+    /* border: 4px double rgba(255, 255, 255, 0.25);
+    border-width: 4px 0; */
     padding: 0.7em 0em;
-    left: 6vw;
+    left: 15%;
     width: 15em;
     margin: 0 0 0 1em;
   }
-  p span {
-    font-size: 28px;
-  }
+
 }
 
 @media(max-width: 540px) {
@@ -93,10 +90,6 @@ p span {
     text-transform: uppercase;
     padding: 0.7em 0em;
     letter-spacing: .5em;
-    display: inline-block;
-    border: 4px double rgba(255, 255, 255, 0.25);
-    border-width: 4px 0;
-    position: absolute;
     top: 3%;
     left: 13.5vw;
     width: 15em;
@@ -106,27 +99,23 @@ p span {
 
 @media(max-width: 480px) {
   p {
-    text-transform: uppercase;
     letter-spacing: .5em;
     border-width: 4px 0;
     padding: 0.6em 0em;
-    position: absolute;
-    left: 8vw;
+    left: 10%;
     width: 17em;
   }
   p span {
-    font-size: 24px;
+
     padding: .15em 0 .15em;
   }
 }
 
 @media(max-width: 440px) {
   p {
-    text-transform: uppercase;
     letter-spacing: .5em;
     border-width: 4px 0;
     padding: .35em 0em;
-    position: absolute;
     left: 9%;
     width: 16em;
     margin: 0 0 0 2em;
@@ -136,11 +125,8 @@ p span {
 @media(max-width: 400px) {
   p {
     padding: 0.4em 0em;
-    text-transform: uppercase;
     letter-spacing: .5em;
     display: inline-block;
-    border-width: 4px 0;
-    position: absolute;
     top: 1%;
     left: 8%;
     width: 16em;
@@ -153,7 +139,7 @@ p span {
 @media(max-width: 360px) {
   p {
     top: 0%;
-    left: 8%;
+    left: 15%;
     margin: 0 0 0 2em;
   }
   p span {
@@ -166,10 +152,10 @@ p span {
 /*iPhone SE*/
 @media(max-width: 320px) {
   p {
-    border-width: 4px 0;
-    padding: 0.3em 0em;
+    border-width: 3px 0;
+    padding: 0.2em 0em;
     position: absolute;
-    left: 7%;
+    left: 15%;
     width: 12em;
     margin: 0 0 0 2em;
   }

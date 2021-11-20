@@ -53,6 +53,7 @@ nav ul li {
   opacity: 0;
   display: none;
   position: relative;
+  text-align: center;
 }
 
 nav li a {
@@ -436,8 +437,9 @@ Animation keyframes
     flex-direction: column;
   }
   nav ul li {
-    height: 25%;
-    top: 15%;
+    flex-basis: 16%;
+    height: 20%;
+    top: 20%;
     position: relative;
     left: 0px;
 }
@@ -461,25 +463,6 @@ Animation keyframes
   
 }
 
-@media (max-width: 540px) {
-  nav ul {
-    flex-direction: column;
-  }
-  nav ul li {
-    flex-basis: 16%;
-    height: 25%;
-    top: 20%;
-    position: relative;
-    left: 0px;
-}
-}
-
-@media (max-width: 480px) {
-  .open-overlay {
-    right: 1rem;
-    top: 7%;
-  }
-
   nav,
 nav ul {
   width: 100%;
@@ -501,17 +484,32 @@ nav ul li {
   opacity: 0;
   display: none;
   left: 0%;
-  top: 21%;
+  top: 0%;
   position: relative;
 }
+
+@media(max-width:767px){
+  nav ul li{
+    top: 20%;
+  }
 }
+
 
 @media (max-width: 540px) {
   .open-overlay {
     right: .5rem;
     top: 8%;
   }
-  
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    flex-basis: 15%;
+    height: 20%;
+    top: 25%;
+    position: relative;
+    left: 0px;
+}
   .open-overlay span {
     display: block;
     height: 2px;
@@ -539,6 +537,18 @@ nav ul li {
     right: 5px;
     top: 8%;
   }
+  nav ul li {
+    flex-basis: 15%;
+    height: 10%;
+    top: 25%;
+    position: relative;
+    left: 0px;
+}
+
+nav li a{
+  height: 20%;
+  top: 30%;
+}
   
   .open-overlay span {
     display: block;

@@ -115,15 +115,16 @@ body {
   text-align: center;
   font-weight: bolder;
   transform: rotate(-90deg);
-  width: 75%;
-  top: 20%;
+  width: 85%;
+  top: 30%;
 }
 
 @media (max-width: 640px) {
   .container p{
     transform: rotate(0deg);
     width: 70%;
-    font-size: x-small;
+    font-size: 1px;
     top: 10%;
+    font-weight: 10;
   }
 };
