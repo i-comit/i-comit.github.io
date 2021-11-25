@@ -9,6 +9,12 @@
     margin:0;
     
   }
+  @media(max-width: 2080px) {
+    #logo {
+      top: -15%;
+      transform: scale(.11);
+    }
+  }
 
   @media(max-width: 1920px) {
     #logo {
@@ -35,7 +41,7 @@
   
   @media(max-width: 1280px) {
     #logo {
-      top: -7%;
+      top: -10%;
       transform: scale(.2);
     }
   }
