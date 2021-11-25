@@ -16,7 +16,13 @@
       transform: scale(.11);
     }
   }
-
+  
+  @media (max-width: 1800px){
+    #logo {
+        top: -13%;
+        transform: scale(.12);
+    }
+  }
   @media(max-width: 1600px) {
     #logo {
       top: -12%;
@@ -31,11 +37,18 @@
       transform: scale(.13);
     }
   }
-  
-  @media(max-width: 1280px) {
+
+  @media(max-width: 1320px) {
     #logo {
-      top: -7%;
-      transform: scale(.2);
+      top: -9%;
+      transform: scale(.15);
+    }
+  }
+  
+  @media(max-width: 1200px) {
+    #logo {
+      top: -7.5%;
+      transform: scale(.18);
     }
   }
 

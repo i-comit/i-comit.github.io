@@ -2,21 +2,21 @@
 <html>
 <body>
   <head>
-    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./i-comit/favicon.ico">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="advanced IT, programming and engineering services">
     <meta name="keywords" content="i-comit, i comit, i-comit llc, khiem g luong">
     <meta name="author" content="Khiem G Luong">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="logoi.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="loading.css">
-    <link rel="stylesheet" href="protip.css">
-    <link rel="stylesheet" href="textscrambler.css">
-    <link rel="stylesheet" href="animatedtext.css">
-
-    <title>i-COMIT - HOME</title>
+    <link rel="stylesheet" href="./index/index.css">
+    <link rel="stylesheet" href="./index/logoi.css">
+    <link rel="stylesheet" href="./index/navbar.css">
+    <link rel="stylesheet" href="./index/animatedtext.css">
+    <link rel="stylesheet" href="./index/protip.css">
+    <link rel="stylesheet" href="./loading.css">
+    <link rel="stylesheet" href="./index/textscrambler.css">
+    <meta name="google-site-verification" content="PdcfwQdZNwT6Qsgy4-T29Y1VM1ykd8Ibra_UsQJl1dY" />
+    <title>i-COMIT-HOME</title>
 
   </head>
 
@@ -28,10 +28,10 @@
 
 
 
-<img id="iCOMIT" src="icomitanimset/icomit0.jpg"></img>
+<img id="iCOMIT" src="animset/icomit0.jpg"></img>
 
 <div class="container">
-<a href="index.html"><img id="logo" src="indeximages/icomitlogowhite.png"></img>
+<a href="index.html"><img id="logo" src="i-comit/icomit-a.png"></img>
 </a>
 <div id="protip">scroll or swipe</div>
 <footer>
@@ -41,33 +41,33 @@
   <div class="overlay-navigation">
     <nav role="navigation">
       <ul>
-        <li><a href="programming/programming.html">
+        <li><a href="coding.html">
           <p>
           <span>
-            Programming
+            Coding
           </span>
         </p></a>
       </li>
-        <li><a href="3ddesign/3ddesign.html">
+        <li><a href="3ddesign.html">
           <p>
           <span>
             3D Design
           </span>
         </p></a>
       </li>
-        <li><a href="webdesign/webdesign.html">
+        <li><a href="webdesign.html">
           <p>
           <span>
             Web Blog
           </span>
         </p></a></li>
-        <li><a href="./other/other.html">
+        <li><a href="other.html">
           <p>
             <span>
               Other Work
             </span>
           </p></a></li>
-        <li><a href = "contactme/contactme.html">
+        <li><a href = "contactme.html">
           <p>
             <span>
               About Me
@@ -114,14 +114,14 @@ function scrollWheel() {
 	if (event.deltaY < 0)
 	{
     score++
-    imagenum = `icomitanimset/icomit${score}.jpg`
+    imagenum = `animset/icomit${score}.jpg`
     $('#iCOMIT').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
 	}
 	else if (event.deltaY > 0)
 	{
     score--
-    imagenum = `icomitanimset/icomit${score}.jpg`
+    imagenum = `animset/icomit${score}.jpg`
     // $('body').css('backgroundImage', `url(${imagenum})`);
     $('#iCOMIT').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${score * -15}px)`;
@@ -143,14 +143,14 @@ document.getElementById("iCOMIT").addEventListener('touchmove', function(e) {
   if(end.screenY - start.screenY > 0)
   {
     swipescore--
-    imagenum = `icomitanimset/icomit${swipescore}.jpg`
+    imagenum = `animset/icomit${swipescore}.jpg`
     $('#iCOMIT').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
   else if(end.screenY - start.screenY < 0)
   {
     swipescore++
-    imagenum = `icomitanimset/icomit${swipescore}.jpg`
+    imagenum = `animset/icomit${swipescore}.jpg`
     $('#iCOMIT').attr('src', imagenum)
     document.getElementById("demo").style.transform = `translateY(${swipescore * -15}px)`;
   }
@@ -160,8 +160,8 @@ document.getElementById("iCOMIT").addEventListener('touchmove', function(e) {
 <script  type='text/javascript'>
   $("document").ready(function(){
       $("#logo").hover(
-          function() {$(this).attr("src","indeximages/icomitlogo.png");},
-          function() {$(this).attr("src","indeximages/icomitlogowhite.png");
+          function() {$(this).attr("src","i-comit/icomit-b.png");},
+          function() {$(this).attr("src","i-comit/icomit-a.png");
       });
   });
   </script>
@@ -169,8 +169,8 @@ document.getElementById("iCOMIT").addEventListener('touchmove', function(e) {
 <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.3/velocity.ui.min.js'></script>
 
-<script src="./navbar.js"></script>
-<script src="./textscrambler.babel"></script>
+<script src="./index/navbar.js"></script>
+<script src="./index/textscrambler.babel"></script>
 <script>
   window.addEventListener('load', function () {
     var el = document.getElementById('loading');
@@ -180,7 +180,7 @@ document.getElementById("iCOMIT").addEventListener('touchmove', function(e) {
     var refreshId = setInterval(function(){
       if(score < 2 || score > 98)
       score = 2
-      imagenum = `icomitanimset/icomit${score++}.jpg`
+      imagenum = `animset/icomit${score++}.jpg`
       $('#iCOMIT').attr('src', imagenum)
       if(document.getElementById("protip").style.display == "none"){
       clearInterval(refreshId)
@@ -194,13 +194,11 @@ document.getElementById("iCOMIT").addEventListener('touchmove', function(e) {
     let numCounter = 0;
     let numArray = [];
     for(let i=0; i < 100; i++){
-        numArray.push(`icomitanimset/icomit${numCounter++}.jpg`)
+        numArray.push(`animset/icomit${numCounter++}.jpg`)
     };
     return numArray
 }
 </script>
-
-
 <script>
 function preload(arrayOfImages) {
     $(arrayOfImages).each(function(){
@@ -209,8 +207,8 @@ function preload(arrayOfImages) {
 }
 
 preload(preloadIter());
-
 </script>
+<script src="pagechange.js"></script>
 
 </body>
 </html>

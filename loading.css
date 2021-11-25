@@ -7,7 +7,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 9999;
-  background-image: url(indeximages/loading.svg);
+  background-image: url(./i-comit/loading.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   /* transform: translate(-8px,-8px); */
