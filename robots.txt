@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /contactme/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://https://i-comit.github.io/sitemap.txt
