@@ -48,7 +48,8 @@ nav ul li {
   flex-basis: 20%;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  width: 100%;
+  /* height: 100%; */
   overflow: hidden;
   opacity: 0;
   display: none;
@@ -72,6 +73,7 @@ nav li a {
   height: 50%;
   padding-top: 4em;
 }
+
 
 nav li a:before {
   content: '';
@@ -404,47 +406,33 @@ Animation keyframes
   border-bottom: 1px solid #222;
 }
 
-@media (max-width: 1080px){
-  .open-overlay {
-    right: 4.5em;
-    top: 0.5em;
-  }
-  .open-overlay span {
-    display: block;
-    height: 7px;
-    background-color: #fff;
-    cursor: pointer;
-    margin-top: 8px;
-  }
+@media (max-width: 1024px){
+  /* .open-overlay {
+    top: 1.5em;
+  } */
 }
 
-@media (max-width: 1024px){
-  .open-overlay {
-    top: 1.5em;
+/* @media(max-width:767px){
+  nav ul li{
+    top: 50%;
   }
-  .open-overlay span {
-    display: block;
-    height: 5px;
-    background-color: #fff;
-    cursor: pointer;
-    margin-top: 10px;
-    /* width: 80px; */
-  }
-}
+} */
+
 
 @media (max-width: 640px) {
   nav ul {
     flex-direction: column;
   }
   nav ul li {
-    flex-basis: 16%;
-    height: 20%;
-    top: 20%;
+    flex-basis: 20%;
+    top: 40%;
+    max-height: 12%;
     position: relative;
-    left: 0px;
 }
   nav ul li a {
     font-size: 11px;
+    height: 20%;
+    /* left: 4%; */
   }
   nav li a:after {
     font-size: 0.6rem;
@@ -453,79 +441,39 @@ Animation keyframes
   nav li a:hover:after {
     transform: translateY(0);
   }
-  .open-overlay {
-    right: 1rem;
-    top: 1.2rem;
-  }
   nav li a:before {
     width: 25px;
   }
   
 }
 
-  nav,
-nav ul {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
+
+@media (min-width: 641px){
+nav li a:hover{
+  animation: pushtextUp 0.2s linear 0s 1 normal forwards;
+}
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+@keyframes pushtextUp {
+  from {transform: translateY(0);}
+  to {transform: translateY(-4%);}
 }
-
-nav ul li {
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  overflow: hidden;
-  opacity: 0;
-  display: none;
-  left: 0%;
-  top: 0%;
-  position: relative;
-}
-
-@media(max-width:767px){
-  nav ul li{
-    top: 20%;
-  }
-}
-
-
 @media (max-width: 540px) {
-  .open-overlay {
-    right: .5rem;
-    top: 8%;
-  }
-  nav ul {
-    flex-direction: column;
-  }
-  nav ul li {
-    flex-basis: 15%;
-    height: 20%;
-    top: 25%;
-    position: relative;
-    left: 0px;
-}
   .open-overlay span {
     display: block;
-    height: 2px;
+    height: 3px;
     background-color: #fff;
     cursor: pointer;
     margin-top: 8px;
-    width: 35px;
+    width: 45px;
   }
+  nav ul li {
+    max-height: 10%;
+    top: 50%;
+}
 }
 
 @media (max-width: 440px) {
-  .open-overlay {
-    right: .5rem;
-    top: 8%;
-  }
-  
   .open-overlay span {
     display: block;
     height: 2px;
@@ -533,29 +481,10 @@ nav ul li {
 }
 
 @media (max-width: 320px) {
-  .open-overlay {
-    right: 5px;
-    top: 8%;
-  }
   nav ul li {
     flex-basis: 15%;
     height: 10%;
-    top: 25%;
     position: relative;
     left: 0px;
 }
-
-nav li a{
-  height: 20%;
-  top: 30%;
-}
-  
-  .open-overlay span {
-    display: block;
-    height: 3px;
-    background-color: #fff;
-    cursor: pointer;
-    margin-top: 8px;
-    width: 36px;
-  }
 }

@@ -44,7 +44,7 @@
         <li><a href="coding.html">
           <p>
           <span>
-            Coding
+            IT & Coding
           </span>
         </p></a>
       </li>
@@ -58,7 +58,7 @@
         <li><a href="webdesign.html">
           <p>
           <span>
-            Web Blog
+            Web & Blog
           </span>
         </p></a></li>
         <li><a href="other.html">
@@ -109,8 +109,10 @@ document.getElementById("iCOMIT").addEventListener("wheel", scrollWheel);
 var score = 1
 function scrollWheel() {
 
-  if(score < 2 || score > 98)
+  if(score > 98)
     score = 2
+  if(score < 2)
+  score = 98
 	if (event.deltaY < 0)
 	{
     score++
@@ -137,8 +139,10 @@ document.getElementById("iCOMIT").addEventListener('touchstart', function(e) {
 });
 document.getElementById("iCOMIT").addEventListener('touchmove', function(e) {
   let end = e.changedTouches[0];
-  if(swipescore < 2 || swipescore > 98)
+  if(swipescore > 98)
     swipescore = 2
+  if(swipescore < 2)
+  swipescore = 98
 
   if(end.screenY - start.screenY > 0)
   {
@@ -205,7 +209,6 @@ function preload(arrayOfImages) {
       $('<img/>')[0].src = this;
     });
 }
-
 preload(preloadIter());
 </script>
 <script src="pagechange.js"></script>

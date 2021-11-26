@@ -1,5 +1,5 @@
 User-agent: Googlebot
-Disallow: /contactme/
+Disallow: /3ddesign/
 
 User-agent: *
 Allow: /

@@ -4,6 +4,7 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
+    overscroll-behavior-y: contain;
 }
 #iCOMIT {
   width: 100%;
@@ -12,89 +13,6 @@ body {
   margin: 0;
 
 }
-
-/* @media(max-width: 1024px) {
-    #iCOMIT{
-        width: 150%;
-        height: 100%;
-        z-index: -1;
-    }
-  }
-@media(max-width: 768px) {
-#iCOMIT{
-    width: 180%;
-    height: 100%;
-    z-index: -1;
-}
-}
-
-@media(max-width: 720px) {
-    #iCOMIT{
-        width: 200%;
-    }
-  }
-@media(max-width: 640px) {
-#iCOMIT{
-    width: 250%;
-}
-
-}
-@media(max-width: 600px) {
-    #iCOMIT{
-        width: 250%;
-    }
-  }
-  @media(max-width: 540px) {
-    #iCOMIT{
-        width: 240%;
-    }
-  }
-
-@media(max-width: 480px) {
-#iCOMIT{
-    width: 275%;
-    transform: translateX(-395px);
-    z-index: -1;
-}
-}
-
-
-@media(max-width: 440px) {
-  #iCOMIT{
-      width: 300%;
-      transform: translateX(-415px);
-      height: 100%;
-      z-index: -1;
-  }
-}
-
-@media(max-width: 400px) {
-  #iCOMIT{
-      width: 300%;
-      transform: translateC(-415px);
-      height: 100%;
-      z-index: -1;
-  }
-}
-
-@media(max-width: 375px) {
-  #iCOMIT{
-      width: 300%;
-      transform: translateC(-360px);
-      height: 100%;
-      z-index: -1;
-  }
-}
-
-@media(max-width: 360px) {
-#iCOMIT{
-    width: 300%;
-    transform: translateX(-360px);
-    height: 100%;
-    z-index: -1;
-}
-} */
-
 .container {
   position: fixed;
   text-align: center;
@@ -115,16 +33,17 @@ body {
   text-align: center;
   font-weight: bolder;
   transform: rotate(-90deg);
-  width: 85%;
-  top: 30%;
+  width: 32vw;
+  top: 55%;
 }
 
 @media (max-width: 640px) {
   .container p{
     transform: rotate(0deg);
-    width: 70%;
+    width: 80%;
     font-size: 1px;
     top: 10%;
+    left: 10%;
     font-weight: 10;
   }
 };
