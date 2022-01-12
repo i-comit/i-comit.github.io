@@ -335,7 +335,7 @@ body {
   transform: translateX(-50%);
   width: 60%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   text-align: center;
   font-size: 1.5rem;
@@ -364,4 +364,14 @@ body {
 
 .active {
   opacity: 1 !important;
+}
+
+.inner{
+  justify-self: right;
+}
+img{
+  max-width:50%;
+  max-height:80%;
+  justify-self: right;
+  
 }
