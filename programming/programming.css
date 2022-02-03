@@ -1,65 +1,49 @@
-
-body{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   font-size: 62.5%;
 }
-
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 57%;
+  }
+}
 
 #video{
-  width: 90%;
-  height: 90%;
+  width: inherit;
+  height: inherit;
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 5%;
 }
 
 body {
   background-color: rgb(117, 117, 117);
   color: #fff;
-  position: absolute;
-  height: 100%;
-  width: 100%;
+  padding: 8rem;
   margin: 0;
-}
-
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 57%;
-  }
-  .slider .illustration{
-    padding-top: 20%;
-  }
-  .container{
-    position: relative;
-    left: 1%;
-    height: 80%;
-  }
-}
-
-.container {
-  position: relative;
-  left: 5%;
-  width: 90%;
-  top: 15%;
-  overflow: hidden;
-  border-radius: 3rem;
 }
 @media only screen and (max-width: 1000px) {
   body {
     padding: 0;
   }
-  .container{
-    position: relative;
-    left: 5%;
-    top: 15%;
-    height: 85%;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5rem;
+}
+@media only screen and (max-width: 1000px) {
+  .container {
+    border-radius: 0;
   }
 }
 
@@ -72,9 +56,8 @@ body {
 }
 @media only screen and (max-width: 1000px) {
   .slider {
-    height: 110vh;
+    height: 100vh;
   }
-
 }
 .slider .box {
   height: 100%;
@@ -112,7 +95,7 @@ body {
     width: 100%;
     left: 0;
     bottom: 0;
-    height: 540%;
+    height: 54%;
     transform: skewX(0deg);
   }
 }
@@ -146,8 +129,8 @@ body {
     grid-row: 2/span 1;
     grid-column: 1/-1;
     text-align: center;
-    padding: 1rem 15px 1rem;
-    transform: translateY(-28rem);
+    padding: 2rem;
+    transform: translateY(-9rem);
   }
 }
 .slider .box .details h1 {
@@ -155,14 +138,14 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   line-height: 100%;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .slider .box .details p {
   display: inline-block;
   font-size: 1.3rem;
   color: #B5B4B4;
   margin-bottom: 2rem;
-  margin-right: 10rem;
+  margin-right: 15rem;
 }
 @media only screen and (max-width: 800px) {
   .slider .box .details p {
@@ -189,13 +172,13 @@ body {
   background-color: #363636;
 }
 .slider .box1 .illustration .inner {
-  background-color: #b4b4b4;
+  background-color: #FF0077;
 }
 .slider .box1 .illustration .inner::after, .slider .box1 .illustration .inner::before {
-  background-color: rgba(139, 139, 139, 0.4);
+  background-color: rgba(255, 0, 119, 0.4);
 }
 .slider .box1 button {
-  background-color: #464646;
+  background-color: #FF0077;
 }
 .slider .box2 {
   background-color: #b6b6b6;
@@ -207,7 +190,7 @@ body {
   background-color: rgba(49, 49, 49, 0.4);
 }
 .slider .box2 button {
-  background-color: #c0c0c0;
+  background-color: #4e4e4e;
 }
 .slider .box3 {
   background-color: #474747;
@@ -229,22 +212,22 @@ body {
   display: none;
 }
 .slider .box4 .illustration .inner::after, .slider .box4 .illustration .inner::before {
-  background-color: rgba(78, 78, 78, 0.4);
+  background-color: rgba(255, 78, 0, 0.4);
 }
 .slider .box4 button {
-  background-color: #555555;
+  background-color: #FF4E00;
 }
 .slider .box5 {
-  background-color: #6d6d6d;
+  background-color: #300050;
 }
 .slider .box5 .illustration .inner {
-  background-color: #575757;
+  background-color: #8000FF;
 }
 .slider .box5 .illustration .inner::after, .slider .box5 .illustration .inner::before {
-  background-color: rgba(100, 100, 100, 0.4);
+  background-color: rgba(128, 0, 255, 0.4);
 }
 .slider .box5 button {
-  background-color: #3f3f3f;
+  background-color: #8000FF;
 }
 .slider .illustration {
   grid-column: 2/-1;
@@ -258,21 +241,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
   }
 }
-
 .slider .illustration div {
-
+  height: 40rem;
+  width: 50rem;
   border-radius: 3rem;
-  background-color: #363636;
+  background-color: #FF0077;
   position: relative;
   /* transform: skewX(-10deg); */
 }
 @media only screen and (max-width: 800px) {
   .slider .illustration div {
-    height: 24rem;
-    width: 24rem;
+    height: 30rem;
+    width: 35rem;
   }
 }
 .slider .illustration div::after, .slider .illustration div::before {
@@ -343,7 +325,7 @@ body {
 @media only screen and (max-width: 650px) {
   .trail {
     width: 90%;
-    bottom: 17%;
+    bottom: 13%;
   }
 }
 .trail div {
@@ -364,14 +346,4 @@ body {
 
 .active {
   opacity: 1 !important;
-}
-
-.inner{
-  justify-self: right;
-}
-img{
-  max-width:50%;
-  max-height:80%;
-  justify-self: right;
-  
 }
