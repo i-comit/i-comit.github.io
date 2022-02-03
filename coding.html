@@ -93,11 +93,11 @@
                 <div class="box4 box">
                     <div class="bg"></div>
                     <div class="details">
-                        <h1>Video Games from the Unity Game Engine</h1>
+                        <h1>OBEDIENCE - game</h1>
                         <p>
-                            The profile of my itch.io account which archives some of old arcade games that I made using C#. 
+                            A Unity game I made out of spite.
                         </p>
-                        <button><a href="https://itch.io/profile/smarttarded" style="text-decoration: none">Check Now</a></button>
+                        <button id="buy_button">Buy Obedience!</button>
                     </div>
 
                     <div class="illustration"><div class="inner">
@@ -156,6 +156,15 @@ window.addEventListener('load', function () {
     var el = document.getElementById('loading');
     el.remove()
 });
+</script>
+<script type="text/javascript" src="https://static.itch.io/api.js"></script>
+<script type="text/javascript">
+    Itch.attachBuyButton(document.getElementById("buy_button"), {
+      // replace the following with the correct information about your game
+      user: "smarttarded",
+      game: "obedience"
+    });
+  </script>
 </script>
 </body>
 </html>
