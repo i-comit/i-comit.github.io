@@ -62,8 +62,9 @@ class TextScramble {
   
   const phrases = [
     'a website programmed from scratch using the DOM.',
-    'the city scene modeled and shaded with blender.',
-    'created NAS systems, SQL DMS, and CAD assemblies',
+    'the city scene modeled and shaded by me.',
+    'submitted nonprovisional utility patent.',
+    'created NAS systems, SQL DMS, and CAD assemblies.',
     'try clicking the hamburger icon or the logo.',
   ]
   
